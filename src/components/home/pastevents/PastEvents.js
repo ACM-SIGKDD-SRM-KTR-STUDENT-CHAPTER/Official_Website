@@ -14,13 +14,12 @@ const PastEvents = () => {
   const callback = function (index) {
     console.log("callback", index);
   };
-
   return (
     <section className="section h-100vh" id="pastevent" style={{marginTop:"100px",marginBottom:"50px"}}>
       <div className="container">
         <div className="gbc2"></div>
         <div className="row">
-          <div className="text-center">
+          <div className="text-center" style={{marginBottom:"20px"}}>
             <h2 className="section-title">
               Our{" "}
               <span style={{ color: "var(--secondary-color)" }}>Past</span>{" "}
@@ -34,7 +33,8 @@ const PastEvents = () => {
             {" "}
             <Carousel
               slides={slides}
-              interval={1000}
+              interval={2000}
+              autoplay={true}
               onSlideChange={callback}
             />
           </div>
