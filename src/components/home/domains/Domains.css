@@ -7,6 +7,7 @@
     padding-bottom: 80px;
     text-align: center;
     font-family: "Syne";
+    margin-bottom: 230px;
   }
   
   .domains-title {
@@ -42,6 +43,7 @@
     border-radius: 22px;
     padding: 20px;
     box-shadow: 0 0 20px rgba(87, 171, 215, 0.8);
+    animation: glow 3s infinite alternate;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add transition for background color */
   }
   @keyframes glow {
@@ -49,10 +51,10 @@
       box-shadow: 0 0 5px rgba(87, 171, 215, 0.8); /* Initial glow */
     }
     50% {
-      box-shadow: 0 0 20px rgba(87, 171, 215, 0.8); /* Medium glow */
+      box-shadow: 0 0 10px rgba(87, 171, 215, 0.8); /* Medium glow */
     }
     100% {
-      box-shadow: 0 0 40px rgba(87, 171, 215, 0.8); /* Increased glow */
+      box-shadow: 0 0 20px rgba(87, 171, 215, 0.8); /* Increased glow */
     }
   }
   .domain-card:hover {
@@ -74,6 +76,11 @@
   .domain-card:hover h3 {
     transform: scale(1.05); 
     color: #f3f3f3; /* Change text color to white on hover */
+  }
+  .image{
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
   }
   @media screen and (max-width: 576px) {
     .domains-container{

@@ -1,7 +1,7 @@
 import React from 'react'
-import '../css/About.css'
+import '../css/Event.css'
 
-function About() { 
+function Event2() { 
 
   return (
     <>
@@ -11,7 +11,7 @@ function About() {
           <div className="row justify-content-center text-center">
             <div className="col-lg-10 text-center">
               <h1 className="title">
-                About{" "}
+                Event2{" "}
                 <span style={{ color: "var(--secondary-color)",textShadow: "0 0 10px #57abd7, 0 0 20px #57abd7" }}>
                  Us
                 </span>{" "}
@@ -28,4 +28,4 @@ function About() {
   )
 }
 
-export default About
+export default Event2

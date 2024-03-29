@@ -1,12 +1,12 @@
 import React from "react";
-import "./PastEvents.css";
+import "./TopImg.css";
 import { Carousel } from "3d-react-carousal";
 import flutter from "../../../assets/Events/sample.png";
 import AutoFinal from "../../../assets/Events/sample.png";
 import Orientation from "../../../assets/Events/or3.jpg"
 // npm install 3d-react-carousal --force
 
-const PastEvents = () => {
+const TopImg = () => {
   let slides = [
     <img src={Orientation} className="imgg" alt="1" />,
     <img src={flutter} className="imgg" alt="2" />,
@@ -22,13 +22,10 @@ const PastEvents = () => {
         <div className="row">
           <div className="text-center" style={{marginBottom:"20px"}}>
             <h2 className="section-title">
-              Our{" "}
-              <span style={{ color: "var(--secondary-color)" }}>Past</span>{" "}
-              Events
+              Top{" "}
+              <span style={{ color: "var(--secondary-color)" }}>
+              Images</span>
             </h2>
-            <p className="section-subtitle">
-              Successful and crazy events we organised in the past
-            </p>
           </div>
           <div className="carousal">
             {" "}
@@ -51,4 +48,4 @@ const PastEvents = () => {
   );
 };
 
-export default PastEvents;
+export default TopImg;
