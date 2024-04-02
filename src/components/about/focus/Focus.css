@@ -1,6 +1,6 @@
 
 
-.domains-container {
+.focus-container {
     max-width: 800px;
     margin: 180px auto; 
     padding-top: 20px;
@@ -11,41 +11,51 @@
     margin-top: 0px;
   }
   
-  .domains-title {
+  .focus-title {
     font-family: "Syne";
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #57abd7; 
+    color: white; 
     display: inline-block; 
-    margin-bottom: 60px;
+    margin-bottom: 40px!important;
   }/** tried adding margin here keeps reverting back to normal**/
   
-  .domains-content {
+  .focus-content {
     font-size: 16px;
     line-height: 1.6;
   }
+  .focus-card {
+    /* Add your existing styles here */
+    filter: blur(0); /* Initial no blur */
+    transition: filter 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;  /* Smooth transition for blur effect */
+  }
   
+  .focus-card.blur {
+    filter: blur(5px);
+    transition: filter 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Adjust the blur intensity as needed */
+  }
   .section-title {
     font-family: "Syne";
-    font-size: 45px;
+    font-size: 35px;
     font-weight: bold;
     margin-bottom: 20px;
   }
   
-  .domains-grid {
+  .focus-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted width of cards */
     gap: 40px; /* Space between cards */
   }
   
-  .domain-card {
+  .focus-card {
     border: 1px solid transparent;
     border-radius: 22px;
     padding: 20px;
     box-shadow: 0 0 20px rgba(87, 171, 215, 0.8);
     animation: glow 3s infinite alternate;
-    transition: filter 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add transition for background color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    height: auto;
   }
   @keyframes glow {
     0% {
@@ -58,13 +68,13 @@
       box-shadow: 0 0 20px rgba(87, 171, 215, 0.8); /* Increased glow */
     }
   }
-  .domain-card:hover {
+  .focus-card:hover {
     transform: scale(1.03);
     transition: background-color 0.8s!important;
     box-shadow: 0 0 20px rgba(87, 171, 215, 0.5); /* Glowing box shadow on hover */
     background-color: #57abd7; /* Change background color on hover */
   }
-  .domain-card:hover .image {
+  .focus-card:hover .image {
     transform: scale(1.1); /* Scale effect on hover */
   }
   .image {
@@ -73,23 +83,20 @@
     margin-bottom: 10px;
     transition: transform 1s ease; /* Smooth transition for hover effect */
   }
-  .domain-card h3 {
+  .focus-card h3 {
     font-size: 30px;
     margin-bottom: 10px;
     color: var(--secondary-color);
     font-weight: bold;
   }
-  .domain-card p {
+  .focus-card p {
     font-size: 16px;
     line-height: 1.6;
-    font-weight: 550;
   }
-  .domain-card:hover h3 {
+  .focus-card:hover h3 {
     transform: scale(1.05); 
-    color: #f3f3f3; /* Change text color to white on hover */
-  }
-  .corp{
-    margin-top: 30px;
+    color: #f3f3f3;
+    text-shadow: "0 0 10px #f3f3f3, 0 0 20px #f3f3f3";
   }
   .image{
     width: 70%;
@@ -97,26 +104,27 @@
     margin-bottom: 10px;
   }
   @media screen and (max-width: 576px) {
-    .domains-container{
+    .focus-container{
     margin-top: -120px;
     width: calc(85%); 
     padding: 20px 4px; 
+    margin-right: 100px;
     }
-    .logo image corp{
-      width: 70%;
-      height: auto;
-      margin-bottom: 10px!important;
+    .focus-title{
+      margin-top: 150px!important;
+      margin-left: 35px;
     }
   }
-@keyframes fadeUpFromBlur {
-  0% {
-    opacity: 0;
-    filter: blur(10px);
-    transform: translateY(50px);
+  @keyframes fadeUpFromBlur {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
   }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-  }
-}
+  

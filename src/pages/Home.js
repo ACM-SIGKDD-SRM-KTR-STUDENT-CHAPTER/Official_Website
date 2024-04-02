@@ -5,6 +5,7 @@ import BlogSection from '../components/home/blogsection/BlogSection'
 import LandingSection from '../components/home/landingsection/LandingSection'
 // eslint-disable-next-line
 import PastEvents from '../components/home/pastevents/PastEvents'
+// eslint-disable-next-line
 import UpcomingEvent from '../components/home/upcomingsection/UpcomingEvent'
 import SponsorSection from '../components/home/sponsorsection/SponsorSection'
 // eslint-disable-next-line
@@ -21,7 +22,7 @@ function Home() {
         description="Dive into the exciting domains of Data Science, Machine Learning, Deep Learning, and Natural Language Processing with us. Join our community of passionate learners and innovators as we explore the cutting-edge technologies shaping the future"
         link="/team"
       />
-    <UpcomingEvent />
+    {/* <UpcomingEvent /> */}
     <Domains/>
     <TeamCarousel />
     <PastEvents />

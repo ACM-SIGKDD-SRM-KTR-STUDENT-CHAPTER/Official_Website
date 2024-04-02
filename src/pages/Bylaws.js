@@ -1,15 +1,47 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import '../css/Bylaws.css'
+import { NavLink } from "react-router-dom";
 
 function Bylaws() { 
+  const [scroll, setScroll] = useState(0);
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (window.AOS) {
+      window.AOS.init();
+    }
+    let progressBarHandler = () => {
+            
+      const totalScroll = document.documentElement.scrollTop;
+      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scroll = `${totalScroll / windowHeight}`;
+
+      setScroll(scroll);
+  }
+
+  window.addEventListener("scroll", progressBarHandler);
+
+  return () => window.removeEventListener("scroll", progressBarHandler);
+  }, []);
   return (
     <>
-    <section className="section">
+    <div id="progressBarContainer">
+                <div id="progressBar" style={{transform: `scale(${scroll}, 1)`, opacity: `${scroll}`}} />
+            </div>
+    <section className="section secn">
         <div className="container" style={{marginTop:"100px"}}>
           <div className="gbc1"></div>
           <div className="row ">
             <div className="col-md-12 text-center">
-              <h1 className="section-title">
+              <h1 data-aos="fade-up" data-aos-duration="1000" className="section-title">
                 SIGKDD SRM KTR Student Chapter
                 <span style={{ color: "var(--secondary-color)",textShadow: "0 0 10px #57abd7, 0 0 20px #57abd7" }}>
                   {" "}
@@ -20,7 +52,7 @@ function Bylaws() {
           </div>
           <div className="container" style={{ marginTop: "40px" }}>
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12" >
                 <h1 className="section-title text-left art" style={{fontSize:"25px",color: "#57abd7", textShadow: "0 0 10px #57abd7, 0 0 20px #57abd7"}}>Article I: Name and Scope</h1>
                 <div className="d-flex" style={{ flex: "50%" ,fontWeight:"500"}}>
                   <div>
@@ -129,6 +161,9 @@ The Chapter shall hold meetings only in places that are open and accessible to a
                     <p style={{marginTop:"-5px"}}>2. Should this Chapter be dissolved, its assets and liabilities shall be trans- ferred to ACM and shall be supervised by the ACM Director of Finance. Funds given to the chapter from the University shall be returned to the University.</p>
                   </div>
                 </div>
+                <NavLink target='_blank' rel='noreffer' to='https://www.acm.org/about-acm/acm-bylaws' className="bbt join-button btn join-button-container" style={{fontWeight:"bold"}}>
+                  For More Information Click Here
+                </NavLink>
               </div>
             </div>
           </div>
