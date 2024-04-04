@@ -1,21 +1,10 @@
 .blog-card {
   background-color: black;
-  animation: glowblog 3s infinite alternate;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   font-weight: 550;
   height: 100%;
   position: relative; /* Ensure relative positioning */
-}
-@keyframes glowblog {
-  0% {
-    box-shadow: 0 0 5px rgba(87, 171, 215, 0.8); /* Initial glow */
-  }
-  50% {
-    box-shadow: 0 0 10px rgba(87, 171, 215, 0.8); /* Medium glow */
-  }
-  100% {
-    box-shadow: 0 0 20px rgba(87, 171, 215, 0.8); /* Increased glow */
-  }
+  box-shadow: 0 0 10px #57abd7, 0 0 10px #57abd7;
 }
 .blog-card-container {
   display: grid!important;
@@ -35,7 +24,6 @@
   border: 2px solid var(--secondary-color);
   font-weight: bold;
 }
-
 .blog-role {
   margin-top: -20px;
   margin-bottom: 25px;
@@ -50,10 +38,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  .blog-card-container{
+    margin-bottom: 20px;
+  }
   .blog-card {
-      width: calc(90%);
-      margin-bottom: 30px;
-      margin-top: 30px;
+      width: 90%; /* Adjust card width as needed */
+      margin: 0 auto 30px; /* Center the card horizontally */
+      padding: 20px;
+      height: 102%;
   }
 
   .blog-title {
@@ -63,6 +55,7 @@
   .blog-text {
       font-size: 16px; /* Adjust font size */
   }
+
   .blog-role {
       margin-top: -15px;
       font-size: 15px;
@@ -73,6 +66,8 @@
 
   .blog-button {
       height: 40px; /* Adjust button height */
-      font-size: 16px; /* Adjust font size */
+      font-size: 16px;
+      margin-left: 22px;
+      margin-bottom: 13px; /* Adjust font size */
   }
 }
