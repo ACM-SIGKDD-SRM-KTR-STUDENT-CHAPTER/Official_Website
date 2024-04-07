@@ -2,12 +2,15 @@ import React, { useState, useRef } from "react";
 import { Carousel } from "react-bootstrap";
 // eslint-disable-next-line
 import Sample from "../../assets/Events/sample.png"
+import Gitsession from "../../assets/Events/gitgithub.png"
 import Orientation1 from "../../assets/Events/or1.jpg"
 import Core from "../../assets/Events/core.jpg"
-import Orientation2 from "../../assets/Events/or3.jpg"
 import YouTube from "react-youtube";
 import "./teamslide.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faCss3, faGitSquare, faGithub, faHtml5, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
+import { faPeopleArrows } from "@fortawesome/free-solid-svg-icons/faPeopleArrows";
 
 function TeamCarousel() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -35,22 +38,22 @@ function TeamCarousel() {
                 </span>{" "}
               </h1>
             <Carousel fade slide className="carousel-glow" interval={null}>
-              <Carousel.Item>
-                <img src={Core} className="d-block w-100 mobile-image" alt="Coming Soon"/>
+            <Carousel.Item>
+                <img src={Sample} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
-                  <h5 className="eventname">Founding Team 2024</h5>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faReact} style={{ marginRight: "4px" }} />React & <FontAwesomeIcon icon={faHtml5} style={{ marginRight: "3px" }} />HTML5 <FontAwesomeIcon icon={faCss3} style={{ marginRight: "2px" }} />CSS3 session</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+            <Carousel.Item>
+                <img src={Gitsession} className="d-block w-100 mobile-image" alt="Coming Soon"/>
+                <Carousel.Caption>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faGitSquare} style={{ marginRight: "4px" }} />Git & <FontAwesomeIcon icon={faGithub} style={{ marginRight: "2px" }} />GitHub session</h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
                 <img src={Orientation1} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
-                  <h5 className="eventname">Orientation '24</h5>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={Orientation2} className="d-block w-100 mobile-image" alt="Coming Soon"/>
-                <Carousel.Caption>
-                  <h5 className="eventname">Orientation '24</h5>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faPeopleArrows} style={{ marginRight: "4px" }} />Orientation '24</h5>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -64,6 +67,12 @@ function TeamCarousel() {
                     }}
                   />
                 </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={Core} className="d-block w-100 mobile-image" alt="Coming Soon"/>
+                <Carousel.Caption>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faPeopleGroup} style={{ marginRight: "4px" }} />Founding Team 2024</h5>
+                </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
           </div>

@@ -2,13 +2,27 @@
   margin-top: 50px;
   margin-bottom: 44px;
 }
-.section{
+.section {
   padding-top: 20px;
+  animation: blurFadeUpp 1s ease-out forwards;
 }
+
+@keyframes blurFadeUpp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
 .tab-btn {
   margin: 0px;
 }
-
 .carousel-item > img {
   height: 500px !important;
   width: 100% !important;
@@ -17,6 +31,7 @@
 }
 .nav-tabs {
   border-bottom: 1px !important;
+  animation: blurFadeUpp 1s ease-out forwards;
 }
 .nav-tabs > .nav-item {
   margin: 1vh;

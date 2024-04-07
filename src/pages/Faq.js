@@ -101,6 +101,18 @@ const Faq = (props) => {
 </ol>
         </Accordion.Body>
       </Accordion.Item>
+      <Accordion.Item eventKey="6">
+        <Accordion.Header>7. How can I stay updated on club events and announcements?</Accordion.Header>
+        <Accordion.Body>
+        Members can stay updated on club events and announcements by subscribing to the club's newsletter, following the club's social media accounts such as Linkedin, Instagram and Twitter, joining the club's mailing list, and regularly checking the club's website or communication channels.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="7">
+        <Accordion.Header>8. Is there a membership fee to join your club?</Accordion.Header>
+        <Accordion.Body>
+        There are no membership fees to join the club; however, acquiring ACM and SIGKDD memberships, which offer significant benefits, is highly recommended. Membership in ACM and SIGKDD is compulsory only for board members.       
+        </Accordion.Body>
+      </Accordion.Item>
     </Accordion>
   </div>
 

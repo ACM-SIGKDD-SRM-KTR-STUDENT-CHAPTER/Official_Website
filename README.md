@@ -1,17 +1,15 @@
 
-![Status](https://img.shields.io/website-up-down-green-red/https/srmsigkdd.vercel.app/.svg)
-![Forks](https://img.shields.io/github/forks/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website.svg)
-![Issues](https://img.shields.io/github/issues/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website.svg)
-![PR](https://img.shields.io/github/issues-pr/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website.svg)
+![Status](https://img.shields.io/website-up-down-green-red/https/srmsigkddtesting.vercel.app/.svg)
+![Forks](https://img.shields.io/github/forks/ADITYAVOFFICIAL/Official_Website.svg)
+![Issues](https://img.shields.io/github/issues/ADITYAVOFFICIAL/Official_Website.svg)
+![PR](https://img.shields.io/github/issues-pr/ADITYAVOFFICIAL/Official_Website.svg)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
-![Views](https://views.whatilearened.today/views/github/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website.svg)
+![Views](https://views.whatilearened.today/views/github/ADITYAVOFFICIAL/Official_Website.svg)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![GitHub repo size](https://img.shields.io/github/repo-size/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website)
+![GitHub repo size](https://img.shields.io/github/repo-size/ADITYAVOFFICIAL/Official_Website)
 
 <p align="center">
-  <a href="srmsigkdd.vercel.app">
-    <img alt = "Logo" height="150" width="150" src = "https://raw.githubusercontent.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website/main/public/favicon-32x32.png">
-  </a>
+    <img alt = "Logo" height="150" width="150" src = "./public/apple-touch-icon.png">
 
 </p>
 <h1 align="center" >SIGKDD Student Chapter SRM KTR </h1>
@@ -27,13 +25,13 @@ Founded in 2024, our chapter is dedicated to fostering learning, collaboration, 
 <br>
 
 ## Demo Screenshot of Home Page
-<img align="center" alt="Home Page"  src="https://raw.githubusercontent.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website/main/public/ss.png">
+<img align="center" alt="Home Page"  src="./public/ss.png">
 
 ## Setting Up Fortuna
 
 1. Installing Dependencies:
     ```bash
-       npm install --legacy-peer-deps
+       npm install
 
 2. Starting the Server:
     ```bash
@@ -47,7 +45,7 @@ flowchart LR
 A(Round)
 A[Git Clone] --> B(Round)
 C(Round)
-B[Open Folder] --> C[npm install --legacy-peer-deps] -->D[npm start]
+B[Open Folder] --> C[npm install] -->D[npm start]
 ```
 
  ## 💻 Current Tech Stack
@@ -84,8 +82,8 @@ B[Open Folder] --> C[npm install --legacy-peer-deps] -->D[npm start]
 
  ## Current Contributors 🔻
 <div align="center">
-  <a href="https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website" />
+  <a href="https://github.com/ADITYAVOFFICIAL/Official_Website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ADITYAVOFFICIAL/Official_Website" />
 </a>
 </div>
 
