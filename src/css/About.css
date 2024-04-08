@@ -5,6 +5,13 @@
     .textt{
         font-size: 15px!important;
     }
+    .threed{
+        width: 200vw!important; /* Set width to full viewport width */
+        height: 100vh!important; /* Set height to full viewport height */
+        margin-top: -140px!important;
+        margin-left: -200px!important;
+        margin-bottom: -350px!important;
+    }
   }
 .textt{
     font-family: "Syne";

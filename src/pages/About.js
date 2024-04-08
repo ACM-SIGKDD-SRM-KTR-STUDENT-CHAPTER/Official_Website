@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import '../css/About.css'
 import Focus from '../components/about/focus/Focus'
+import Spline from '@splinetool/react-spline';
 
 function About() { 
   const [scroll, setScroll] = useState(0);
@@ -45,7 +46,8 @@ function About() {
                     <p className='textt'>The ACM SIGKDD Student Chapter at SRM KTR Campus is a dynamic community of students passionate about data science and its applications. As an official student chapter of ACM SIGKDD (Special Interest Group on Knowledge Discovery in Data), we are committed to fostering a culture of innovation, learning, and collaboration in the field of data science.</p>
                   </div>
                 </div>
-  <div className="content">
+                <Spline className='threed' scene="https://prod.spline.design/v-IBsi0nOsWOEuWg/scene.splinecode" style={{marginTop:"-70px"}}/>
+  <div className="content" style={{marginTop:"-160px"}}>
   <Focus/>
   </div>
 </div>

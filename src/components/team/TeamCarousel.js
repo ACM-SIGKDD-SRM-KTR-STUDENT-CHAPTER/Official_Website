@@ -38,12 +38,12 @@ function TeamCarousel() {
                 </span>{" "}
               </h1>
             <Carousel fade slide className="carousel-glow" interval={null}>
-            <Carousel.Item>
+            {/* <Carousel.Item>
                 <img src={Sample} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
                   <h5 className="eventname"><FontAwesomeIcon icon={faReact} style={{ marginRight: "4px" }} />React & <FontAwesomeIcon icon={faHtml5} style={{ marginRight: "3px" }} />HTML5 <FontAwesomeIcon icon={faCss3} style={{ marginRight: "2px" }} />CSS3 session</h5>
                 </Carousel.Caption>
-              </Carousel.Item>
+              </Carousel.Item> */}
             <Carousel.Item>
                 <img src={Gitsession} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
