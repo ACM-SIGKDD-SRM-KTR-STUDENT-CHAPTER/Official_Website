@@ -12,7 +12,7 @@ import About from './pages/About'
 import Faq from './pages/Faq'
 import Err from './components/err/Err';
 import Blogs from './pages/Blogs'
-import {Routes, Route,} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 function App() {
   return (

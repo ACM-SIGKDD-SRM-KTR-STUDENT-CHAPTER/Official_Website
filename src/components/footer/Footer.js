@@ -46,8 +46,8 @@ function Footer() {
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="https://linktr.ee/srmsigkdd" target="_blank" rel="noreferrer">
-                        <i className="bi bi-tree"></i>
+                      <a href="https://twitter.com/srmsigkdd" target="_blank" rel="noreferrer">
+                        <i className="bi bi-twitter"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
