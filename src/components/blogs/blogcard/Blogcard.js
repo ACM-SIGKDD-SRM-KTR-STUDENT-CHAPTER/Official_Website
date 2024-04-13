@@ -7,7 +7,7 @@ function Blogcard(props) {
   return (
     <div className="blog-card-container">
       <Card className='blog-card' style={{ width: '18rem', marginBottom: '20px', position: 'relative' }}>
-        <Card.Img variant="top" src={props.imgSrc} style={{ borderRadius: "20px" }} />
+        <Card.Img variant="top" src={props.imgSrc} style={{ borderRadius: "13px" }} />
         <Card.Body className='blog-body'>
           <Card.Title className='blog-title' style={{color:"white",fontFamily:"Syne",fontWeight:"bold",fontSize:"21px"}}>{props.title}</Card.Title>
           <Card.Text className='blog-text' style={{color:"white"}}>{props.aboutblog}</Card.Text>

@@ -14,6 +14,7 @@ import Err from './components/err/Err';
 import Blogs from './pages/Blogs'
 import {Routes, Route} from 'react-router-dom';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
+import Projects from './pages/Projects';
 function App() {
   return (
     <>
@@ -28,6 +29,7 @@ function App() {
       <Route path="about" element={<About/>} />
       <Route path="faq" element={<Faq/>} />
       <Route path="blogs" element={<Blogs/>} />
+      <Route path="projects" element={<Projects/>} />
       <Route path="*" element={<Err />} />
     </Routes>
     <Footer/>

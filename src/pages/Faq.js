@@ -108,7 +108,7 @@ const Faq = (props) => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="7">
-        <Accordion.Header>8. Is there a membership fee to join your club?</Accordion.Header>
+        <Accordion.Header>8. Is there a membership fee to join our club?</Accordion.Header>
         <Accordion.Body>
         There are no membership fees to join the club; however, acquiring ACM and SIGKDD memberships, which offer significant benefits, is highly recommended. Membership in ACM and SIGKDD is compulsory only for board members.       
         </Accordion.Body>

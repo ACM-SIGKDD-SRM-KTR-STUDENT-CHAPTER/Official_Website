@@ -43,7 +43,8 @@ function About() {
           <div className="container">
                 <div className="d-flex" style={{ flex: "50%" ,fontWeight:"500"}}>
                   <div>
-                    <p className='textt'>The ACM SIGKDD Student Chapter at SRM KTR Campus is a dynamic community of students passionate about data science and its applications. As an official student chapter of ACM SIGKDD (Special Interest Group on Knowledge Discovery in Data), we are committed to fostering a culture of innovation, learning, and collaboration in the field of data science.</p>
+                    <p className='textt'>As an official student chapter of ACM SIGKDD (Special Interest Group on Knowledge Discovery in Data), we are committed to fostering a culture of innovation, learning, and collaboration in the field of data science and data related fields.<br/><br/> Our members work across multiple disciplines to deliver their solutions for the world!</p>
+                    <p className='textt'>We make real-time projects, conduct researches, organize meetups, host events, and workshops primarily focusing on Data Science, Machine Learning, Al, Web Development and more. We guide and teach all those who aspire to work in these fields and help them attain better skills and knowledge.</p>
                   </div>
                 </div>
                 <Spline className='threed' scene="https://prod.spline.design/v-IBsi0nOsWOEuWg/scene.splinecode" style={{marginTop:"-70px"}}/>

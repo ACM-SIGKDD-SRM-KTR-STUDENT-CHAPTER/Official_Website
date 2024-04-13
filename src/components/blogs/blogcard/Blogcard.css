@@ -5,6 +5,7 @@
   height: 102%;
   position: relative; /* Ensure relative positioning */
   box-shadow: 0 0 10px #57abd7, 0 0 10px #57abd7;
+  border-radius: 15px!important;
 }
 .blog-card-container {
   display: grid!important;
@@ -23,6 +24,7 @@
   color: var(--accent-color);
   border: 2px solid var(--secondary-color);
   font-weight: bold;
+  border-radius: 10px;
 }
 .blog-role {
   margin-top: -20px;

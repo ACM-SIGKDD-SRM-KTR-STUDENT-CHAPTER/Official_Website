@@ -6,7 +6,7 @@
   font-family: "Syne";
 }
 .nav-link {
-  margin: 0px 12px;
+  margin: 0px 6px;
 }
 
 .navbar-brand {
@@ -22,7 +22,7 @@
 .custom-contact {
   background-color: var(--primary-color);
   padding: 0px 10px 0px 10px;
-  border-radius: 22px;
+  border-radius: 15px;
 }
 .custom-contact > .nav-link,
 .custom-contact > .nav-link:hover {

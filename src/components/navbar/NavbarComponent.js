@@ -112,6 +112,19 @@ function NavbarComponent() {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
+                to="/projects"
+                style={{fontWeight:"bolder"}}
+                onClick={() => {
+                  setActiveLink("/projects");
+                  window.innerWidth <= 768 &&
+                    document.querySelector(".navbar-toggler").click();
+                }}
+                className={activeLink === "/projects" ? "active" : ""}
+              >
+                Projects
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
                 to="/blogs"
                 style={{fontWeight:"bolder"}}
                 onClick={() => {
