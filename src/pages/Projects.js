@@ -20,7 +20,7 @@ function Projects() {
           </div>
           <div className="proj-card-container">
             <ProjectCard
-              imgSrc="https://raw.githubusercontent.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website/main/public/ss.png?token=GHSAT0AAAAAACQZSHWSR63XCB2NBG4TET5EZQ25I7Q"
+              imgSrc="https://raw.githubusercontent.com/ADITYAVOFFICIAL/Official_Website/main/public/ss.png"
               title="SRMIST KTR ACM SIGKDD Student Chapter Website"
               role="24 March 2024"
               Mediumlink="https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website"
