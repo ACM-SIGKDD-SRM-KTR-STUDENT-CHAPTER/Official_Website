@@ -27,7 +27,7 @@ function Projects() {
             />
             <ProjectCard
               imgSrc="https://editor.analyticsvidhya.com/uploads/32086heading.jpeg"
-              title="SMS Space Detection"
+              title="SMS Spam Detection"
               role="7 April 2024"
               Mediumlink="https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/R-D-Projects-April-2024/tree/main/SMS%20Spam%20Detection"
             />
