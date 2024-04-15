@@ -20,6 +20,18 @@ function Projects() {
           </div>
           <div className="proj-card-container">
             <ProjectCard
+              imgSrc="https://s3.amazonaws.com/aurochssolutions.com-images/sales_forecasting_01_10ee95f93b.jpeg"
+              title="Sales Forecasting"
+              role="7 April 2024"
+              Mediumlink="https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/R-D-Projects-April-2024/tree/main/Sales%20Forecasting"
+            />
+            <ProjectCard
+              imgSrc="https://editor.analyticsvidhya.com/uploads/32086heading.jpeg"
+              title="SMS Space Detection"
+              role="7 April 2024"
+              Mediumlink="https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/R-D-Projects-April-2024/tree/main/SMS%20Spam%20Detection"
+            />
+            <ProjectCard
               imgSrc="https://raw.githubusercontent.com/ADITYAVOFFICIAL/Official_Website/main/public/ss.png"
               title="SRMIST KTR ACM SIGKDD Student Chapter Website"
               role="24 March 2024"
