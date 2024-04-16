@@ -66,10 +66,10 @@ B[Open Folder] --> C[npm install] -->D[npm start]
 **ADITYA VERMA**
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/main/pics/adityav.png"  height="120" alt="Aditya Verma">
+<img src = "https://raw.githubusercontent.com/ADITYAVOFFICIAL/main/pics/adityav.png"  height="120" alt="Aditya Verma">
 </p>
 <p align="center">
-<a href = "https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER"><img src = "https://img.icons8.com/3d-fluency/94/github.png" width="36" height = "36"/></a>
+<a href = "https://github.com/adityav"><img src = "https://img.icons8.com/3d-fluency/94/github.png" width="36" height = "36"/></a>
 <a href = "https://www.linkedin.com/in/aditya-verma-real/">
 <img src = "https://img.icons8.com/color/48/linkedin.png" width="36" height="36"/>
 </a>
@@ -82,7 +82,7 @@ B[Open Folder] --> C[npm install] -->D[npm start]
 
  ## Current Contributors 🔻
 <div align="center">
-  <a href="https://github.com/ADITYAVOFFICIAL/Official_Website/graphs/contributors">
+  <a href="https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website" />
 </a>
 </div>
