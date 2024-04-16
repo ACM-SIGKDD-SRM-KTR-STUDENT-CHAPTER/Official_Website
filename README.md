@@ -82,7 +82,7 @@ B[Open Folder] --> C[npm install] -->D[npm start]
 
  ## Current Contributors 🔻
 <div align="center">
-  <a href="https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website/graphs/contributors">
+  <a href="https://github.com/ADITYAVOFFICIAL/Official_Website/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website" />
 </a>
 </div>
