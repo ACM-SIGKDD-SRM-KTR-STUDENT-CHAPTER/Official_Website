@@ -88,4 +88,4 @@ B[Open Folder] --> C[npm install] -->D[npm start]
 </div>
 
 #
-<p align="center">Made with ❤️ <b>TEAM ACM SIGKDD SRM KTR </b></p>
+<p align="center">Made with ❤️ <b>TEAM SRMIST KTR ACM SIGKDD Student Chapter </b></p>
