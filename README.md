@@ -66,7 +66,7 @@ B[Open Folder] --> C[npm install] -->D[npm start]
 **ADITYA VERMA**
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ADITYAVOFFICIAL/main/pics/adityav.png"  height="120" alt="Aditya Verma">
+<img src = "https://raw.githubusercontent.com/ADITYAVOFFICIAL/ADITYAVOFFICIAL/main/pics/adityav.png"  height="120" alt="Aditya Verma">
 </p>
 <p align="center">
 <a href = "https://github.com/adityav"><img src = "https://img.icons8.com/3d-fluency/94/github.png" width="36" height = "36"/></a>
