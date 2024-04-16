@@ -1,12 +1,12 @@
 
 ![Status](https://img.shields.io/website-up-down-green-red/https/srmsigkddtesting.vercel.app/.svg)
-![Forks](https://img.shields.io/github/forks/ADITYAVOFFICIAL/Official_Website.svg)
-![Issues](https://img.shields.io/github/issues/ADITYAVOFFICIAL/Official_Website.svg)
-![PR](https://img.shields.io/github/issues-pr/ADITYAVOFFICIAL/Official_Website.svg)
+![Forks](https://img.shields.io/github/forks/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website.svg)
+![Issues](https://img.shields.io/github/issues/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website.svg)
+![PR](https://img.shields.io/github/issues-pr/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website.svg)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
-![Views](https://views.whatilearened.today/views/github/ADITYAVOFFICIAL/Official_Website.svg)
+![Views](https://views.whatilearened.today/views/github/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website.svg)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![GitHub repo size](https://img.shields.io/github/repo-size/ADITYAVOFFICIAL/Official_Website)
+![GitHub repo size](https://img.shields.io/github/repo-size/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website)
 
 <p align="center">
     <img alt = "Logo" height="150" width="150" src = "./public/apple-touch-icon.png">
@@ -66,10 +66,10 @@ B[Open Folder] --> C[npm install] -->D[npm start]
 **ADITYA VERMA**
 
 <p align="center">
-<img src = "https://raw.githubusercontent.com/ADITYAVOFFICIAL/ADITYAVOFFICIAL/main/pics/adityav.png"  height="120" alt="Aditya Verma">
+<img src = "https://raw.githubusercontent.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/main/pics/adityav.png"  height="120" alt="Aditya Verma">
 </p>
 <p align="center">
-<a href = "https://github.com/ADITYAVOFFICIAL"><img src = "https://img.icons8.com/3d-fluency/94/github.png" width="36" height = "36"/></a>
+<a href = "https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER"><img src = "https://img.icons8.com/3d-fluency/94/github.png" width="36" height = "36"/></a>
 <a href = "https://www.linkedin.com/in/aditya-verma-real/">
 <img src = "https://img.icons8.com/color/48/linkedin.png" width="36" height="36"/>
 </a>
@@ -82,8 +82,8 @@ B[Open Folder] --> C[npm install] -->D[npm start]
 
  ## Current Contributors 🔻
 <div align="center">
-  <a href="https://github.com/ADITYAVOFFICIAL/Official_Website/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ADITYAVOFFICIAL/Official_Website" />
+  <a href="https://github.com/ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ACM-SIGKDD-SRM-KTR-STUDENT-CHAPTER/Official_Website" />
 </a>
 </div>
 
