@@ -6,7 +6,7 @@ import Gitsession from "../../assets/Events/gitgithub.png"
 import Orientation1 from "../../assets/Events/or1.jpg"
 import Core from "../../assets/Events/core.jpg"
 import HTMLCSS from "../../assets/Events/htmlcss.jpeg"
-import YouTube from "react-youtube";
+// import YouTube from "react-youtube";
 import "./teamslide.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCss3, faGitSquare, faGithub, faHtml5 } from "@fortawesome/free-brands-svg-icons";
@@ -57,7 +57,7 @@ function TeamCarousel() {
                   <h5 className="eventname"><FontAwesomeIcon icon={faPeopleArrows} style={{ marginRight: "4px" }} />Orientation '24</h5>
                 </Carousel.Caption>
               </Carousel.Item>
-              <Carousel.Item>
+              {/* <Carousel.Item>
                 <div style={{ width: "100%", height: "110%", borderRadius: "22px", overflow: "hidden" }}>
                   <YouTube
                     videoId="XN9pRYh3zTA"
@@ -68,7 +68,7 @@ function TeamCarousel() {
                     }}
                   />
                 </div>
-              </Carousel.Item>
+              </Carousel.Item> */}
               <Carousel.Item>
                 <img src={Core} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
