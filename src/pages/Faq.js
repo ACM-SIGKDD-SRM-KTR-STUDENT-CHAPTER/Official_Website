@@ -113,6 +113,12 @@ const Faq = (props) => {
         There are no membership fees to join the club; however, acquiring ACM and SIGKDD memberships, which offer significant benefits, is highly recommended. Membership in ACM and SIGKDD is compulsory only for board members.       
         </Accordion.Body>
       </Accordion.Item>
+      <Accordion.Item eventKey="8">
+        <Accordion.Header>9. How to become a member of the student chapter?</Accordion.Header>
+        <Accordion.Body>
+        Timely recruitments for the student chapter is conducted every semester that consists of test and interview rounds. Evaluation of the candidate after both rounds ensures selection in the student chapter.
+        </Accordion.Body>
+      </Accordion.Item>
     </Accordion>
   </div>
 
