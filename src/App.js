@@ -15,6 +15,8 @@ import Blogs from './pages/Blogs'
 import {Routes, Route} from 'react-router-dom';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import Projects from './pages/Projects';
+import Reports from './pages/Reports';
+
 function App() {
   return (
     <>
@@ -30,6 +32,7 @@ function App() {
       <Route path="faq" element={<Faq/>} />
       <Route path="blogs" element={<Blogs/>} />
       <Route path="projects" element={<Projects/>} />
+      <Route path="reports" element={<Reports/>} />
       <Route path="*" element={<Err />} />
     </Routes>
     <Footer/>

@@ -7,7 +7,7 @@
     padding-bottom: 80px;
     text-align: center;
     font-family: "Syne";
-    margin-bottom: 230px;
+    margin-bottom: -50px;
     margin-top: 0px;
   }
   
@@ -109,6 +109,7 @@
     width: calc(85%); 
     padding: 20px 4px; 
     margin-right: 100px;
+    margin-bottom: -120px;
     }
     .focus-title{
       margin-top: 150px!important;

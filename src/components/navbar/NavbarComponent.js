@@ -83,7 +83,7 @@ function NavbarComponent() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" style={{marginTop: "24px", marginLeft: "auto"}} />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto">
+            <Nav className="mx-auto nav-li">
               <Nav.Link
                 as={NavLink}
                 to="/"
@@ -136,19 +136,19 @@ function NavbarComponent() {
               >
                 Blogs
               </Nav.Link>
-              {/* <Nav.Link
-                as={HashLink}
-                to="/#upcomingevents"
+              <Nav.Link
+                as={NavLink}
+                to="/reports"
                 style={{fontWeight:"bolder"}}
                 onClick={() => {
-                  setActiveLink("/#upcomingevents");
+                  setActiveLink("/reports");
                   window.innerWidth <= 768 &&
                     document.querySelector(".navbar-toggler").click();
                 }}
-                className={activeLink === "/#upcomingevents" ? "active" : ""}
+                className={activeLink === "/reports" ? "active" : ""}
               >
-                Events
-              </Nav.Link> */}
+                Reports
+              </Nav.Link>
               <Nav.Link
                 as={NavLink}
                 to="/bylaws"
