@@ -189,13 +189,13 @@ function Team() {
                           linkedinUrl="https://www.linkedin.com/in/saptarishi-sarkar-b9813424b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                           githubUrl="https://github.com/Saptarishi-S"
                         />
-                        <ProfileCard
+                        {/* <ProfileCard
                           img={Sample}
                           name="NAME"
                           role="Member"
                           linkedinUrl="https://www.linkedin.com/in/"
                           githubUrl="https://www.github.com/"
-                        />
+                    /> */}
                       </>
                     }
                   />
