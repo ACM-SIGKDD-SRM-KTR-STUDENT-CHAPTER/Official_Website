@@ -74,7 +74,15 @@
   border-radius: 50%;
   margin: 0px;
 }
-
+.quest-btn{
+  border-radius: 20px;
+  font-weight: bold;
+  color: #41728d;
+  scale: 0.8;
+}
+.quest-btn:hover{
+  color: var(--secondary-color);
+}
 .copyright .active {
   color: var(--secondary-color);
   text-decoration: none;
