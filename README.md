@@ -28,6 +28,7 @@ Founded in 2024, our chapter is dedicated to fostering learning, collaboration, 
 
 ## <a href="https://srmsigkdd.hyperping.app/">STATUS</a>
 <BR>
+
 ## Demo Screenshot of Home Page
 <img align="center" alt="Home Page"  src="./public/ss.png">
 
