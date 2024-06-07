@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import '../css/About.css'
 import Focus from '../components/about/focus/Focus'
 import Spline from '@splinetool/react-spline';
-
+import CharterCert from '../components/about/charter/Charter';
 function About() { 
   const [scroll, setScroll] = useState(0);
 
@@ -49,6 +49,7 @@ function About() {
                 </div>
                 <Spline className='threed' scene="https://prod.spline.design/v-IBsi0nOsWOEuWg/scene.splinecode" style={{marginTop:"-70px"}}/>
   <div className="content" style={{marginTop:"-160px"}}>
+    <CharterCert/>
   <Focus/>
   </div>
 </div>

@@ -13,6 +13,25 @@
         margin-bottom: -350px!important;
     }
   }
+  .parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for centering vertically */
+  }
+  
+  .chart_cert {
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px #57abd7, 0 0 20px #57abd7;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 .textt{
     font-family: "Syne";
     font-weight: 550;
