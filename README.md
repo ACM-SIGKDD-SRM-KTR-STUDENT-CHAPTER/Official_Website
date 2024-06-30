@@ -32,7 +32,7 @@ Founded in 2024, our chapter is dedicated to fostering learning, collaboration, 
 ## Demo Screenshot of Home Page
 <img align="center" alt="Home Page"  src="./public/ss.png">
 
-## Setting Up Fortuna
+## Setting Up Website on local machine
 
 1. Installing Dependencies:
     ```bash
