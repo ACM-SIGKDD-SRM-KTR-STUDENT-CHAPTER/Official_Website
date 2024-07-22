@@ -128,7 +128,7 @@ function Team() {
                           img={Aditya}
                           name="Aditya Verma"
                           role="Chairperson (Lead)"
-                          linkedinUrl="https://www.linkedin.com/in/"
+                          linkedinUrl="https://www.linkedin.com/in/adityave/"
                           githubUrl="https://github.com/ADITYAVOFFICIAL/"
                         />
                         <ProfileCard
