@@ -1,5 +1,5 @@
 import React from "react";
-import Sample from "../assets/Events/sample.png";
+import Sample from "../assets/Events/recban.png";
 
 function copyLink() {
   var link = window.location.href;

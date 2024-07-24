@@ -19,7 +19,7 @@ function Home() {
         description="Dive into the exciting domains of Data Science, Machine Learning, Deep Learning, and Natural Language Processing with us. Join our community of passionate learners and innovators as we explore the cutting-edge technologies shaping the future"
         link="/team"
       />
-    {/* <UpcomingEvent /> */}
+    <UpcomingEvent />
     <Domains/>
     <TeamCarousel />
     <div className='container'></div>
