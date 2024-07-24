@@ -83,7 +83,7 @@ function Reports() {
                     content={
                       <>
                         <RepCard
-                          name="Orientation"
+                          name="Orientation [First Batch]"
                           role="28 March 2024"
                           pdfURL="#"
                         />

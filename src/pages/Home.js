@@ -9,7 +9,7 @@ import SponsorSection from '../components/home/sponsorsection/SponsorSection'
 import { InstagramEmbed } from 'react-social-media-embed'
 import TeamCarousel from "../components/team/TeamCarousel";
 import Domains from '../components/home/domains/Domains'
-
+import Quotes from '../components/home/quoteofday/quoteofday'
 function Home() { 
   return (
     <>
@@ -19,7 +19,8 @@ function Home() {
         description="Dive into the exciting domains of Data Science, Machine Learning, Deep Learning, and Natural Language Processing with us. Join our community of passionate learners and innovators as we explore the cutting-edge technologies shaping the future"
         link="/team"
       />
-    {/* <UpcomingEvent /> */}
+      <Quotes/>
+    <UpcomingEvent />
     <Domains/>
     <TeamCarousel />
     <div className='container'></div>

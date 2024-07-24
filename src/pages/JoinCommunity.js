@@ -1,5 +1,6 @@
 import React from "react";
-import Sample from "../assets/Events/sample.png";
+import Sample from "../assets/Events/recban.png";
+import "../css/JoinCommunity.css";
 
 function copyLink() {
   var link = window.location.href;
@@ -15,7 +16,7 @@ function JoinCommunity() {
   return (
     <>
       <section className="section">
-        <div className="container" style={{marginTop:"80px"}}>
+        <div className="container adjcom" style={{marginTop:"100px"}}>
           <div className="gbc1"></div>
           <div className="row ">
             <div className="col-md-12 text-center">

@@ -1,8 +1,15 @@
 .card{
   font-family: "Syne";
-    border-radius: 20px!important;
+  border-radius: 20px!important;
 }
-
+.section-title {
+  font-family: "Syne";
+  font-size: 45px!important;
+  font-weight: bold;
+}
+.madj{
+  margin-bottom: 30vh;
+}
 .glow{
 box-shadow: 0 0 20px rgba(87, 171, 215, 0.8); /* Light purple color with alpha for glow effect */
 animation: glow 3s infinite alternate; /* Apply animation for breathing effect */
@@ -13,7 +20,11 @@ animation: glow 3s infinite alternate; /* Apply animation for breathing effect *
   font-weight: 520;
 }
 .button-container {
-  text-align: center; /* Center-align the buttons horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 43%;
 }
 .custom-button {
   font-family: "Syne";
@@ -51,15 +62,33 @@ animation: glow 3s infinite alternate; /* Apply animation for breathing effect *
   
 @media screen and (max-width: 576px) {
   .section{
-    margin-top: 10px;
+    margin-top: -90px;
   }
   .section-title{
-    font-size: 33px!important;
+    font-size: 40px!important;
   }
-    .mobcard {
+  .button-container{
+    flex-direction: row; 
+     gap: 25%;
+  }
+  .madj{
+    margin-bottom: 15vh;
+  }
+  .mobcard {
         margin-bottom: 35px;
         width: calc(80%); 
-        margin-bottom: 180px;
+        margin-left: 10%;}
+  }
+  @keyframes fadeUpFromBlur {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
     }
   }
   
