@@ -74,7 +74,7 @@ animation: glow 3s infinite alternate; /* Apply animation for breathing effect *
   .madj{
     margin-bottom: 15vh;
   }
-    .mobcard {
+  .mobcard {
         margin-bottom: 35px;
         width: calc(80%); 
         margin-left: 10%;}

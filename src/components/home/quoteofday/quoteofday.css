@@ -1,0 +1,15 @@
+@media screen and (max-width: 576px) {
+    .mobcard {
+          margin-bottom: 35px!important;
+          width: calc(80%)!important; 
+          margin-left: 10%!important;}
+    }
+    .qucard {
+        margin-bottom: 35px;
+          width: calc(220%); 
+          margin-left: -60%;
+          margin-top: 10%;
+      }
+      .bgg{
+        color: #57abd7;
+      }
