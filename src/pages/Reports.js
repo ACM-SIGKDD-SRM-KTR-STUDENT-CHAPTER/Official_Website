@@ -3,7 +3,7 @@ import "../css/Reports.css";
 import RepCard from "../components/reports/RepCard";
 import Tab from "../components/team/tabbar/Tab";
 import TabContent from "../components/team/tabbar/TabContent";
-
+import GithubReport from "../assets/reports/github-24-1.pdf";
 function Reports() {
   return (
     <>
@@ -90,7 +90,7 @@ function Reports() {
                         <RepCard
                           name="Git and GitHub Session"
                           role="3 April 2024"
-                          pdfURL="#"
+                          pdfURL={GithubReport}
                         />
                         <RepCard
                           name="Web Development Session"
