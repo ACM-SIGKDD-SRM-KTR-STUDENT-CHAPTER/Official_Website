@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Carousel from "react-bootstrap/Carousel";
 import { NavLink } from "react-router-dom";
 import CreatorCard from "./CreatorCard";
 import "./Footer.css";
 import Verma from "../../assets/CoreMembers/Aditya.jpg";
 
-
 function Footer() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [weatherData, setWeatherData] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,6 +21,28 @@ function Footer() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    const fetchWeatherData = async () => {
+      try {
+        const response = await axios.get(
+          "https://api.weatherapi.com/v1/current.json",
+          {
+            params: {
+              key: process.env.REACT_APP_WEATHER_API_KEY,
+              q: "Chengalpattu"
+            }
+          }
+        );
+        setWeatherData(response.data.current);
+      } catch (error) {
+        console.error("Error fetching weather data", error);
+      }
+    };
+
+    fetchWeatherData();
+  }, []);
+
   return (
     <>
       <footer>
@@ -63,32 +86,46 @@ function Footer() {
                   <ul className="contact-list list-unstyled">
                     <li className="list-item">
                       <i className="bi bi-envelope"></i>
-                      <a href="mailto:srmsigkdd@gmail.com">
+                      <a style={{fontWeight:"500",fontSize:"18px"}} href="mailto:srmsigkdd@gmail.com">
                         srmsigkdd@gmail.com
                       </a>
                     </li>
                     <li className="list-item">
                       <i className="bi bi-geo-alt-fill"></i>
-                      <a href="https://www.google.com/maps/place/SRM+University,+Kattankulathur,+Tamil+Nadu+603203/@12.8194041,80.0367139,17z/data=!3m1!4b1!4m6!3m5!1s0x3a52f76c4db87a47:0x341fa471f8027d68!8m2!3d12.8193124!4d80.0393459!16s%2Fg%2F11f7b3plgj?entry=ttu">UB, SRM Institute of Science and Technology, Kattankulkathur, Chennai [603203]
+                      <a style={{fontWeight:"500",fontSize:"18px"}} href="https://www.google.com/maps/place/SRM+University,+Kattankulathur,+Tamil+Nadu+603203/@12.8194041,80.0367139,17z/data=!3m1!4b1!4m6!3m5!1s0x3a52f76c4db87a47:0x341fa471f8027d68!8m2!3d12.8193124!4d80.0393459!16s%2Fg%2F11f7b3plgj?entry=ttu">UB, SRM Institute of Science and Technology, Kattankulkathur, Chennai [603203]
                       </a>
                     </li>
+                    {weatherData && (
+                      <>
+                        <h4 className="footer-section-title" style={{fontSize:"20px",marginTop:"25px"}}>Weather @SRMIST KTR</h4>
+                        <li className="list-item" style={{fontWeight:"500"}}>
+                          <i className="bi bi-thermometer-half" style={{marginRight:"10px"}}></i> Temperature: {weatherData.temp_c}°C
+                        </li>
+                        <li className="list-item" style={{fontWeight:"500"}}>
+                          <i className="bi bi-cloud" style={{marginRight:"10px"}}></i> Condition: {weatherData.condition.text}
+                        </li>
+                        <li className="list-item" style={{fontWeight:"500"}}>
+                          <i className="bi bi-wind" style={{marginRight:"10px"}}></i> Wind: {weatherData.wind_kph} kph
+                        </li>
+                      </>
+                    )}
                   </ul>
                 </div>
                 <div className="col-lg-3">
                   <h3 className="footer-section-title" style={{color:"white",fontWeight:"bold"}}>Developed By</h3>
                   <Carousel className="footer-carousel" fade indicators={false} controls={false} interval={2000}>
-                  <Carousel.Item>
-                          <CreatorCard
-                            img={Verma}
-                            title="Aditya Verma"
-                            role="Chairperson"
-                          />
-                  </Carousel.Item>
+                    <Carousel.Item>
+                      <CreatorCard
+                        img={Verma}
+                        title="Aditya Verma"
+                        role="Chairperson"
+                      />
+                    </Carousel.Item>
                   </Carousel>
                 </div>
               </div>
               <div className="copyright text-center">
-                <p style={{ color: "white", fontWeight: "bold", marginRight: isMobile ? "0px" : "170px" }}>
+                <p style={{ color: "white", fontWeight: "bold", marginRight: isMobile ? "0px" : "170px",marginTop:"-80px" }}>
                   &copy; {isMobile ? "2024" : "2024 Made with ❤️ by"}
                   <NavLink to="#"> SIGKDD Student Chapter SRM KTR </NavLink>
                 </p>

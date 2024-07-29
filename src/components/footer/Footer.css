@@ -93,7 +93,7 @@
 }
 @media (max-width: 768px) {
   .footer-section-title {
-    margin: 40px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
     color: white!important;
   }
   .contact-list i {

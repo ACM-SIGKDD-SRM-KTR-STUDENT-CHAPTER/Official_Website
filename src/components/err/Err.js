@@ -11,7 +11,7 @@ function Err() {
             <div className="col-lg-10 text-center mobtitle">
               <h1 className="title head404">
               <div className="Erlogo" style={{marginBottom:"20px"}}><img src={Errimage} className='er'/></div>
-                <span className="head404" style={{ color: "var(--secondary-color)", textShadow: "0 0 10px #57abd7, 0 0 15px #57abd7" }}>
+                <span className="head404" style={{ color: "var(--secondary-color)", textShadow: "0 0 10px #57abd7, 0 0 1px #57abd7" }}>
                 The page you are looking for does not exist{" "}
                 </span><br />
               </h1>

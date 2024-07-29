@@ -27,7 +27,7 @@ const LandingSection = (props) => {
     </Button>
   </div>
 </Alert> */}
-          <div className="container" style={{marginTop:"10px"}}>
+          <div className="container mobadjj" style={{marginTop:"10px"}}>
             <div className="gbc1"></div>
             <div className="row justify-content-between mt-3">
               <div className="col-3 ">

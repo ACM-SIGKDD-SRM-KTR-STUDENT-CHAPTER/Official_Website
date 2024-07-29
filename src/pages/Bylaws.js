@@ -41,8 +41,8 @@ function Bylaws() {
           <div className="gbc1"></div>
           <div className="row ">
             <div className="col-md-12 text-center">
-              <h1 className="section-title">
-                SIGKDD SRM KTR Student Chapter
+              <h1 className="section-title mobtbylaw">
+                SRMIST KTR SIGKDD Student Chapter
                 <span style={{ color: "var(--secondary-color)",textShadow: "0 0 10px #57abd7, 0 0 20px #57abd7" }}>
                   {" "}
                   Bylaws

@@ -92,28 +92,28 @@ function Team() {
                     className="nav-link tab-btn"
                     id="technical-tab"
                     targetID="#technical-tab-pane"
-                    title="R&D Team"
+                    title="Research & Development"
                     selected="false"
                   />
                   <Tab
                     className="nav-link tab-btn"
                     id="webappdev-tab"
                     targetID="#webappdev-tab-pane"
-                    title="Web/App Dev Team"
+                    title="Web/App Dev"
                     selected="false"
                   />
                   <Tab
                     className="nav-link tab-btn"
                     id="event-tab"
                     targetID="#event-tab-pane"
-                    title="Corporate Team"
+                    title="Corporate"
                     selected="false"
                   />
                   <Tab
                     className="nav-link tab-btn"
                     id="design-tab"
                     targetID="#design-tab-pane"
-                    title="Creatives Team"
+                    title="Creatives"
                     selected="false"
                   />
                 </ul>

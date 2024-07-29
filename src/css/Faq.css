@@ -62,11 +62,14 @@
     }
     .title{
       font-size: 32px;
-      margin-top: -10px!important;
+      margin-top: -0px!important;
+    }
+    .lan{
+      margin-top: -1vh!important;
     }
     .accordion {
       width: 100%;
-      margin: 0 auto; /* Align center */
+      margin: 0 auto; 
       margin-bottom: 100px;
     }
   }

@@ -20,7 +20,7 @@ function Home() {
         link="/team"
       />
       <Quotes/>
-    <UpcomingEvent />
+    {/* <UpcomingEvent /> */}
     <Domains/>
     <TeamCarousel />
     <div className='container'></div>
