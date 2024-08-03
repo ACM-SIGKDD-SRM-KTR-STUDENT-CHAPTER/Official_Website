@@ -17,12 +17,13 @@ import Yamika from "../assets/CoreMembers/yamika.jpeg";
 import Medha from "../assets/CoreMembers/medha.jpeg";
 import Vaibhav from "../assets/CoreMembers/vaibhav.jpeg";
 import Krishna from "../assets/CoreMembers/krishna.jpeg";
-import Saptarishi from "../assets/CoreMembers/saptrishi.jpeg";
 import Himanshu from "../assets/CoreMembers/himanshu.jpeg";
 import PCKar from "../assets/CoreMembers/drpckar.jpeg";
 import Vishal from "../assets/Developers/vishal.png";
 import Ansh from "../assets/CoreMembers/ansh.png";
 import Gupta from "../assets/Developers/gupta.png";
+import Srijita from "../assets/CoreMembers/srijita.jpeg";
+import Mann from "../assets/CoreMembers/mann.jpeg";
 // eslint-disable-next-line
 import Samplee from "../assets/CoreMembers/Samplee.png";
 
@@ -182,20 +183,6 @@ function Team() {
                           linkedinUrl="https://www.linkedin.com/in/vishal-mohan-nair-6130a1177/"
                           githubUrl="https://github.com/Whis2903"
                         />
-                        <ProfileCard
-                          img={Saptarishi}
-                          name="Saptarishi Sarkar"
-                          role="R&D Lead"
-                          linkedinUrl="https://www.linkedin.com/in/saptarishi-sarkar-b9813424b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                          githubUrl="https://github.com/Saptarishi-S"
-                        />
-                        {/* <ProfileCard
-                          img={Sample}
-                          name="NAME"
-                          role="Member"
-                          linkedinUrl="https://www.linkedin.com/in/"
-                          githubUrl="https://www.github.com/"
-                        /> */}
                       </>
                     }
                   />
@@ -209,7 +196,7 @@ function Team() {
                           img={Kalpana}
                           name="Dr. Kalpana AV"
                           role="Faculty Co-ordinator"
-                          // linkedinUrl="https://www.linkedin.com/in/"
+                          linkedinUrl="https://www.linkedin.com/in/kalpana-a-v-1246101a6/"
                         />
                          <ProfileCard
                           img={PCKar}
@@ -233,13 +220,13 @@ function Team() {
                           linkedinUrl="https://www.linkedin.com/in/dheeraj-sharma-97251120b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                           githubUrl="https://github.com/dheeraj5988"
                         />
-                        {/* <ProfileCard
-                          img={Sample}
-                          name="Lead Name"
+                        <ProfileCard
+                          img={Mann}
+                          name="Mann Kumar Attri"
                           role="Creatives Lead"
-                          linkedinUrl="https://www.linkedin.com/in/"
-                          githubUrl="https://github.com/"
-                        /> */}
+                          linkedinUrl="https://www.linkedin.com/in/mann-attri-32757329b"
+                          githubUrl="https://github.com/mannchaudhary"
+                        />
                       </>
                     }
                   />
@@ -263,6 +250,13 @@ function Team() {
                           linkedinUrl="https://www.linkedin.com/in/ansh-semwal-52518a301/"
                           githubUrl="https://github.com/anshsemwal"
                         />
+                        <ProfileCard
+                          img={Srijita}
+                          name="Srijita Seth"
+                          role="PR Head"
+                          linkedinUrl="https://www.linkedin.com/in/srijita-seth/"
+                          instagramUrl="https://www.instagram.com/srijita_seth/"
+                        />
                          <ProfileCard
                           img={Krishna}
                           name="Krishna Mahajan "
@@ -270,13 +264,6 @@ function Team() {
                           linkedinUrl="https://www.linkedin.com/in/krishna-mahajan8764?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                           githubUrl="https://github.com/KRISHNA140504"
                         />
-                        {/* <ProfileCard
-                          img={Srijita}
-                          name="Srijita Seth"
-                          role="PR Lead"
-                          linkedinUrl="https://www.linkedin.com/in/srijita-seth-365b9a262/"
-                          githubUrl="https://github.com/Srijitaseth"
-                        /> */}
                       </>
                     }
                   />

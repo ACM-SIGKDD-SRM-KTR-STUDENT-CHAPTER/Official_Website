@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { Carousel } from "react-bootstrap";
 // eslint-disable-next-line
 import Sample from "../../assets/Events/sample.png"
+import Outreach from "../../assets/Events/outreach.jpg"
 import Gitsession from "../../assets/Events/gitgithub.png"
 import Orientation1 from "../../assets/Events/or1.jpg"
 import Core from "../../assets/Events/core.jpg"
@@ -10,7 +11,7 @@ import HTMLCSS from "../../assets/Events/htmlcss.jpeg"
 import "./teamslide.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCss3, faGitSquare, faGithub, faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
+import { faHandsHelping, faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
 import { faPeopleArrows } from "@fortawesome/free-solid-svg-icons/faPeopleArrows";
 
 function TeamCarousel() {
@@ -39,6 +40,12 @@ function TeamCarousel() {
                 </span>{" "}
               </h1>
             <Carousel fade slide className="carousel-glow" interval={null}>
+            <Carousel.Item>
+                <img src={Outreach} className="d-block w-100 mobile-image" alt="Coming Soon"/>
+                <Carousel.Caption>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faHandsHelping} style={{ marginRight: "3px" }} />Outreach Program</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
             <Carousel.Item>
                 <img src={HTMLCSS} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>

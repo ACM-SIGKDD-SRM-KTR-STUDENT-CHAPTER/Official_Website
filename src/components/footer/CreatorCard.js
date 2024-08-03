@@ -12,6 +12,10 @@ function CreatorCard(props) {
             {props.role}
           </p>
         </div>
+        <div className="lastup">
+          <div className="glowing-circle"></div>
+          <p>Last Updated : 04/08/24 || 12:00am</p>
+        </div>
       </div>
     </>
   );

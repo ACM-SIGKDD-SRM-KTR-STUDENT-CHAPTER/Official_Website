@@ -41,3 +41,38 @@
   font-weight: 500;
   color: white;
 }
+.lastup {
+  margin-top: 3dvh;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+}
+.glowing-circle {
+  width: 12px;
+  height: 12px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin-right: 8px;
+  box-shadow: 0 0 40px var(--secondary-color);
+  margin-top: -2dvh;
+  animation: glowing 20s infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 20px var(--secondary-color);
+  }
+  50% {
+    box-shadow: 0 0 40px var(--secondary-color);
+  }
+  100% {
+    box-shadow: 0 0 20px var(--secondary-color);
+  }
+}
+@media (max-width: 767px) {
+  .lastup {
+    display: none;
+  }
+}

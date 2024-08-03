@@ -4,6 +4,9 @@ import RepCard from "../components/reports/RepCard";
 import Tab from "../components/team/tabbar/Tab";
 import TabContent from "../components/team/tabbar/TabContent";
 import GithubReport from "../assets/reports/github-24-1.pdf";
+import GithubEvent from "../assets/Events/gitgithub.png";
+import Webdev from "../assets/Events/htmlcss.jpeg";
+import Orientation from "../assets/Events/or1.jpg";
 function Reports() {
   return (
     <>
@@ -83,16 +86,19 @@ function Reports() {
                     content={
                       <>
                         <RepCard
+                          imgSrc={Orientation}
                           name="Orientation [First Batch]"
                           role="28 March 2024"
                           pdfURL="#"
                         />
                         <RepCard
+                          imgSrc={GithubEvent}
                           name="Git and GitHub Session"
                           role="3 April 2024"
                           pdfURL={GithubReport}
                         />
                         <RepCard
+                          imgSrc={Webdev}
                           name="Web Development Session"
                           role="15 April 2024"
                           pdfURL="#"
