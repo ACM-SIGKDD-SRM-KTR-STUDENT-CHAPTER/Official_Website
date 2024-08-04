@@ -24,6 +24,7 @@ import Ansh from "../assets/CoreMembers/ansh.png";
 import Gupta from "../assets/Developers/gupta.png";
 import Srijita from "../assets/CoreMembers/srijita.jpeg";
 import Mann from "../assets/CoreMembers/mann.jpeg";
+import Khichi from "../assets/CoreMembers/khi.jpeg";
 // eslint-disable-next-line
 import Samplee from "../assets/CoreMembers/Samplee.png";
 
@@ -182,6 +183,13 @@ function Team() {
                           role="R&D Head"
                           linkedinUrl="https://www.linkedin.com/in/vishal-mohan-nair-6130a1177/"
                           githubUrl="https://github.com/Whis2903"
+                        />
+                        <ProfileCard
+                          img={Khichi}
+                          name="Aditya Singh Khichi"
+                          role="R&D Lead"
+                          linkedinUrl="https://www.linkedin.com/in/aditya-singh-khichi-b21749245/"
+                          githubUrl="https://github.com/moduluz"
                         />
                       </>
                     }
