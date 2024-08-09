@@ -126,7 +126,7 @@ function Footer() {
               </div>
               <div className="copyright text-center">
                 <p style={{ color: "white", fontWeight: "bold", marginRight: isMobile ? "0px" : "170px",marginTop:"-80px" }}>
-                  &copy; {isMobile ? "2024" : "2024 Made with ❤️ by"}
+                  &copy; {isMobile ? "2024" : "2024 Made with ☕ by"}
                   <NavLink to="#"> SIGKDD Student Chapter SRM KTR </NavLink>
                 </p>
                 <NavLink to="https://srmsigkddquest.vercel.app" className="btn quest-btn">WILDCARD RECRUITMENT</NavLink>

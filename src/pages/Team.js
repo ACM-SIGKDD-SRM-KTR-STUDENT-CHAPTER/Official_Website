@@ -261,7 +261,7 @@ function Team() {
                         <ProfileCard
                           img={Srijita}
                           name="Srijita Seth"
-                          role="PR Head"
+                          role="PR Lead"
                           linkedinUrl="https://www.linkedin.com/in/srijita-seth/"
                           instagramUrl="https://www.instagram.com/srijita_seth/"
                         />
