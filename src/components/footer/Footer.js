@@ -129,7 +129,7 @@ function Footer() {
                   &copy; {isMobile ? "2024" : "2024 Made with ☕ by"}
                   <NavLink to="#"> SIGKDD Student Chapter SRM KTR </NavLink>
                 </p>
-                <NavLink to="https://srmsigkddquest.vercel.app" className="btn quest-btn">WILDCARD RECRUITMENT</NavLink>
+                <NavLink to="" className="btn quest-btn">WILDCARD RECRUITMENT</NavLink>
               </div>
             </div>
           </div>
