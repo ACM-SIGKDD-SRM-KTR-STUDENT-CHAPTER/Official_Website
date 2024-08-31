@@ -120,8 +120,12 @@
   .landing-section {
     margin: 100px 0px !important;
   }
+  .landbtnadjust{
+    width: 92%!important;
+    margin-left: -10%!important;
+  }
   .mobadjj{
-    margin-top: -80px!important;
+    margin-top: -100px!important;
   }
   .container{
     margin-bottom: 15px;
