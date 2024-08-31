@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Submission Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.2.0/tailwind.min.css">
+    <style>
+        body {
+            background-color: #f7fafc;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #3182ce;
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background-color: #2b6cb0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-10 p-6">
+        <div class="card p-6">
+            <h1 class="text-2xl font-bold mb-4">Submit a New Project</h1>
+            <form id="project-form">
+                <div class="mb-4">
+                    <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+                    <input type="text" id="title" name="title" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" />
+                </div>
+                <div class="mb-4">
+                    <label for="proj_image" class="block text-sm font-medium text-gray-700">Project Image URL</label>
+                    <input type="text" id="proj_image" name="proj_image" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" />
+                </div>
+                <div class="mb-4">
+                    <label for="date" class="block text-sm font-medium text-gray-700">Date</label>
+                    <input type="date" id="date" name="date" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" />
+                </div>
+                <div class="mb-4">
+                    <label for="github_link" class="block text-sm font-medium text-gray-700">GitHub Link</label>
+                    <input type="url" id="github_link" name="github_link" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" />
+                </div>
+                <div class="flex justify-end">
+                    <button type="submit" class="btn-primary px-4 py-2 rounded-md text-white font-semibold text-sm shadow-sm">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('project-form').addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const title = document.getElementById('title').value;
+            const proj_image = document.getElementById('proj_image').value;
+            const date = document.getElementById('date').value;
+            const github_link = document.getElementById('github_link').value;
+
+            try {
+                const response = await fetch('https://srmsigkdd-backend-server.vercel.app/projects', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ title, proj_image, date, github_link }),
+                });
+
+                if (response.ok) {
+                    alert('Project submitted successfully!');
+                    document.getElementById('project-form').reset();
+                } else {
+                    alert('Failed to submit project. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error submitting project:', error);
+                alert('An error occurred. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
