@@ -6,6 +6,7 @@
     padding: 0 15px; /* Optional: Add some padding for small screens */
     margin-top: 10vh;
     margin-bottom: 15vh;
+    border: none;
 }
 
 .upcoming-label {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "../components/projects/ProjectCard";
-import { Spinner, Alert } from "react-bootstrap";
+import {  Alert } from "react-bootstrap";
 import "../css/Projects.css";
 
 function Projects() {
@@ -53,11 +53,9 @@ function Projects() {
                     <div className="proj-card-container">
                         {loading ? (
                             <div className="text-center loading-container">
-                                <Spinner animation="border" role="status" className="loading-spinner">
-                                    <span className="visually-hidden">Loading...</span>
-                                </Spinner>
-                                <p className="loading-text">Loading projects...</p>
-                            </div>
+                            <div className="loader"></div> {/* Custom spinner */}
+                            <p className="loading-text">Loading projects...</p>
+                        </div>
                         ) : error ? (
                             <Alert variant="danger">
                                 {error}
