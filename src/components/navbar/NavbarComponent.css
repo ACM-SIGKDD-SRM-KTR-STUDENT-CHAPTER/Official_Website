@@ -14,7 +14,30 @@
 .navbar-brand {
   font-weight: 600;
 }
+/* Dropdown Styles */
+.custom-navbar .dropdown-menu {
+  background: rgba(0, 0, 0, 0.9) !important;
+  backdrop-filter: blur(70px);
+  border-radius: 15px;
+  color: var(--accent-color);
+  border-color: var(--secondary-color);
+  border-width: 3px;
+}
 
+.custom-navbar .dropdown-item {
+  color: var(--accent-color);
+  font-weight: bolder;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+
+.custom-navbar .dropdown-item:hover,
+.custom-navbar .dropdown-item:focus,
+.custom-navbar .dropdown-item.active {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  border-radius: 10px;
+}
 .nav-link:focus,
 .nav-link:hover,
 .nav-link.active,

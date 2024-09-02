@@ -73,8 +73,23 @@ function Reports() {
                     className="tab-pane fade show"
                     content={
                       <>
+                      <RepCard
+                          imgSrc="https://srmsigkdd-cdn.netlify.app/images/inauguration.jpg"
+                          name="Inauguration"
+                          role="30 August 2024"
+                          pdfURL="#"
+                        />
                         <RepCard
-                          name="COOKING"
+                          imgSrc="https://srmsigkdd-cdn.netlify.app/images/techtalk.jpg"
+                          name="Tech Talk"
+                          role="30 August 2024"
+                          pdfURL="#"
+                        />
+                        <RepCard
+                          imgSrc="https://srmsigkdd-cdn.netlify.app/images/treasurehunt.jpg"
+                          name="Treasure Hunt"
+                          role="30 August 2024"
+                          pdfURL="#"
                         />
                       </>
                     }

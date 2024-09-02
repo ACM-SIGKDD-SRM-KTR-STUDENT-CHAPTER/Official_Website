@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import SRMSIGKDD from "../../assets/Images/srmsigkdd.png";
 
@@ -63,6 +63,13 @@ function NavbarComponent() {
 
   const [activeLink, setActiveLink] = useState(""); // State to track active link
 
+  const handleLinkClick = (path) => {
+    setActiveLink(path);
+    if (window.innerWidth <= 768) {
+      document.querySelector(".navbar-toggler").click();
+    }
+  };
+
   return (
     <>
       <Navbar
@@ -78,47 +85,60 @@ function NavbarComponent() {
             href="/"
             style={{ fontFamily: "Syne", color: "var(--secondary-color)" }}
           >
-            <img src={SRMSIGKDD} width="70" height="60" alt="srm sigkdd logo" style={{paddingRight:"10px"}}/>
+            <img src={SRMSIGKDD} width="70" height="60" alt="srm sigkdd logo" style={{ paddingRight: "10px" }} />
             SRM KTR ACM SIGKDD Student Chapter
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" style={{marginTop: "24px", marginLeft: "auto"}} />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ marginTop: "24px", marginLeft: "auto" }} />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto nav-li">
               <Nav.Link
                 as={NavLink}
                 to="/"
-                style={{fontWeight:"bolder"}}
-                onClick={() => {
-                  setActiveLink("/");
-                  window.innerWidth <= 768 &&
-                    document.querySelector(".navbar-toggler").click();
-                }}
+                style={{ fontWeight: "bolder" }}
+                onClick={() => handleLinkClick("/")}
                 className={activeLink === "/" ? "active" : ""}
               >
                 Home
               </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/about"
-                style={{fontWeight:"bolder"}}
-                onClick={() => {
-                  setActiveLink("/about");
-                  window.innerWidth <= 768 &&
-                    document.querySelector(".navbar-toggler").click();
+              <NavDropdown
+                title="About Us"
+                id="basic-nav-dropdown"
+                style={{ fontWeight: "bolder" }}
+                className={activeLink.startsWith("/about") ? "active" : ""}
+                onSelect={(eventKey) => {
+                  handleLinkClick(eventKey);
                 }}
-                className={activeLink === "/about" ? "active" : ""}
               >
-                About Us
-              </Nav.Link>
+                <NavDropdown.Item
+                  as={NavLink}
+                  to="/about"
+                  eventKey="/about"
+                  style={{ fontWeight: "bolder" }}
+                >
+                  About Us
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={NavLink}
+                  to="/reports"
+                  eventKey="/reports"
+                  style={{ fontWeight: "bolder" }}
+                >
+                  Reports
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={NavLink}
+                  to="/bylaws"
+                  eventKey="/bylaws"
+                  style={{ fontWeight: "bolder" }}
+                >
+                  Bylaws
+                </NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link
                 as={NavLink}
                 to="/projects"
-                style={{fontWeight:"bolder"}}
-                onClick={() => {
-                  setActiveLink("/projects");
-                  window.innerWidth <= 768 &&
-                    document.querySelector(".navbar-toggler").click();
-                }}
+                style={{ fontWeight: "bolder" }}
+                onClick={() => handleLinkClick("/projects")}
                 className={activeLink === "/projects" ? "active" : ""}
               >
                 Projects
@@ -126,51 +146,26 @@ function NavbarComponent() {
               <Nav.Link
                 as={NavLink}
                 to="/blogs"
-                style={{fontWeight:"bolder"}}
-                onClick={() => {
-                  setActiveLink("/blogs");
-                  window.innerWidth <= 768 &&
-                    document.querySelector(".navbar-toggler").click();
-                }}
+                style={{ fontWeight: "bolder" }}
+                onClick={() => handleLinkClick("/blogs")}
                 className={activeLink === "/blogs" ? "active" : ""}
               >
                 Blogs
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
-                to="/reports"
-                style={{fontWeight:"bolder"}}
-                onClick={() => {
-                  setActiveLink("/reports");
-                  window.innerWidth <= 768 &&
-                    document.querySelector(".navbar-toggler").click();
-                }}
-                className={activeLink === "/reports" ? "active" : ""}
+                to="/events"
+                style={{ fontWeight: "bolder" }}
+                onClick={() => handleLinkClick("/events")}
+                className={activeLink === "/events" ? "active" : ""}
               >
-                Reports
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/bylaws"
-                style={{fontWeight:"bolder"}}
-                onClick={() => {
-                  setActiveLink("/bylaws");
-                  window.innerWidth <= 768 &&
-                    document.querySelector(".navbar-toggler").click();
-                }}
-                className={activeLink === "/bylaws" ? "active" : ""}
-              >
-                Bylaws
+                Events
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
                 to="/team"
-                style={{fontWeight:"bolder"}}
-                onClick={() => {
-                  setActiveLink("/team");
-                  window.innerWidth <= 768 &&
-                    document.querySelector(".navbar-toggler").click();
-                }}
+                style={{ fontWeight: "bolder" }}
+                onClick={() => handleLinkClick("/team")}
                 className={activeLink === "/team" ? "active" : ""}
               >
                 Team
@@ -178,12 +173,8 @@ function NavbarComponent() {
               <Nav.Link
                 as={NavLink}
                 to="/faq"
-                style={{fontWeight:"bolder"}}
-                onClick={() => {
-                  setActiveLink("/faq");
-                  window.innerWidth <= 768 &&
-                    document.querySelector(".navbar-toggler").click();
-                }}
+                style={{ fontWeight: "bolder" }}
+                onClick={() => handleLinkClick("/faq")}
                 className={activeLink === "/faq" ? "active" : ""}
               >
                 FAQs
@@ -191,7 +182,7 @@ function NavbarComponent() {
             </Nav>
             <Nav className="ms-auto">
               <div className="custom-contact">
-                <Nav.Link onClick={handleShow} style={{fontWeight:"bold"}}>Contact Us</Nav.Link>
+                <Nav.Link onClick={handleShow} style={{ fontWeight: "bold" }}>Contact Us</Nav.Link>
               </div>
             </Nav>
           </Navbar.Collapse>
@@ -214,12 +205,12 @@ function NavbarComponent() {
                     </span>{" "}
                     something
                   </h1>
-                  <p style={{fontWeight:"bold"}}>Our team will reply as soon as possible</p>
+                  <p style={{ fontWeight: "bold" }}>Our team will reply as soon as possible</p>
                   <div className="contact-form">
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
                       <Row className="mb-3">
                         <Form.Group as={Col} md="6" controlId="validationCustom01">
-                          <Form.Label style={{fontWeight:"bold"}}>Name</Form.Label>
+                          <Form.Label style={{ fontWeight: "bold" }}>Name</Form.Label>
                           <Form.Control
                             required
                             type="text"
@@ -229,14 +220,14 @@ function NavbarComponent() {
                           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
                         <Form.Group as={Col} md="6" controlId="validationCustom02">
-                          <Form.Label style={{fontWeight:"bold"}}>Email</Form.Label>
+                          <Form.Label style={{ fontWeight: "bold" }}>Email</Form.Label>
                           <Form.Control required type="email" placeholder="Email" name="Email" />
                           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
                       </Row>
                       <Row className="mb-3">
                         <Form.Group as={Col} md="12" controlId="validationCustom03">
-                          <Form.Label style={{fontWeight:"bold"}}>Subject</Form.Label>
+                          <Form.Label style={{ fontWeight: "bold" }}>Subject</Form.Label>
                           <Form.Control
                             required
                             as="textarea" rows={1}
@@ -247,8 +238,8 @@ function NavbarComponent() {
                             Please provide a valid message.
                           </Form.Control.Feedback>
                         </Form.Group>
-                        <Form.Group as={Col} md="12" controlId="validationCustom03" style={{marginTop:"10px"}}>
-                          <Form.Label style={{fontWeight:"bold"}}>Message</Form.Label>
+                        <Form.Group as={Col} md="12" controlId="validationCustom03" style={{ marginTop: "10px" }}>
+                          <Form.Label style={{ fontWeight: "bold" }}>Message</Form.Label>
                           <Form.Control
                             required
                             as="textarea" rows={4}
@@ -274,4 +265,3 @@ function NavbarComponent() {
 }
 
 export default NavbarComponent;
-

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Blogcard from "../components/blogs/blogcard/Blogcard";
-import { Spinner, Alert } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 import "../css/Blogs.css";
 
 function Blogs() {
@@ -47,9 +47,7 @@ function Blogs() {
                     <div className="blog-card-container">
                         {loading ? (
                             <div className="text-center loading-container">
-                                <Spinner animation="border" role="status" className="loading-spinner">
-                                    <span className="visually-hidden">Loading...</span>
-                                </Spinner>
+                                <div className="loader"></div> {/* Custom spinner */}
                                 <p className="loading-text">Loading blogs...</p>
                             </div>
                         ) : error ? (

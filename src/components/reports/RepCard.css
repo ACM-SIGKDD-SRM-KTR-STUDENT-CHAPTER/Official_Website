@@ -2,7 +2,7 @@
   font-family: "Syne";
   border-radius: 5%;
   margin-top: 20px;
-  padding: 5px 0;
+  padding: 2px 0;
   backdrop-filter: blur(10px); /* Apply blur effect */
   background-color: rgba(255, 255, 255, 0.15); 
   transition: background-color 0.3s, transform 0.3s;
@@ -74,7 +74,7 @@
   }
   .custom-card-rep {
     width: calc(90%); 
-    padding: 20px 1px; /* Adjust padding */
+    padding: 5px 1px; /* Adjust padding */
   }
 
   .custom-card-rep > .card-body > .card-title {
