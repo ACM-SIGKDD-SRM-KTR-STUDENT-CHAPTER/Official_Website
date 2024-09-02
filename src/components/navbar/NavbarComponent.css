@@ -53,7 +53,9 @@
 .custom-contact > .nav-link:hover {
   color: var(--accent-color);
 }
-
+.contactbtn {
+  width: 200px;
+}
 .navbar-collapse {
   text-align: center;
   border-radius: 0px 0px 22px 22px;
@@ -77,7 +79,36 @@ textarea {
   background: var(--secondary-color);
   color: var(--accent-color);
   font-weight: bold;
+  border-color: var(--secondary-color);
 }
+.custom-form-control {
+  /* Customize border color */
+  border-color: var(--secondary-color);
+  border-width: 2px; /* Adjust this value as needed */
+  
+  /* Customize background color */
+  background-color: #f8f9fa; /* Adjust this value as needed */
+
+  /* Customize text color */
+  color: #495057; /* Adjust this value as needed */
+}
+
+.custom-form-control::placeholder {
+  /* Customize placeholder text color */
+  color: #9b9d9e;
+  font-weight: bold;
+}
+
+.custom-form-control:focus {
+  /* Customize border color on focus */
+  border-color: var(--secondary-color);
+  border-width: 3px; /* Adjust this value as needed */
+  color: #9b9d9e;
+  font-weight: bold;
+  /* Customize box shadow on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Adjust this value as needed */
+}
+
 .submit-button:hover {
   background: transparent;
   border: 2px solid var(--secondary-color);
@@ -86,6 +117,9 @@ textarea {
 }
 
 @media (max-width: 480px) {
+  .contactbtn {
+    width: 350px;
+  }
   .navbar-brand {
     height: 60px !important;
     font-size: 0.8rem;

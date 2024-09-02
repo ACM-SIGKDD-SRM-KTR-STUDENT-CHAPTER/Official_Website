@@ -37,21 +37,21 @@ const Search = ({ searchQuery, setSearchQuery, filterOptions, setFilterOptions }
         setFilterOptions(prev => ({ ...prev, location: e.target.value }));
     };
     return (
-        <div className="search-container">
-            <InputGroup className="search-input-group">
+        <div className="events-search-container">
+            <InputGroup className="events-search-input-group">
                 <FormControl
                     placeholder="Search events..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="search-input"
+                    className="events-search-input"
                 />
-                <InputGroup.Text className="search-icon">
+                <InputGroup.Text className="events-search-icon">
                     <FontAwesomeIcon icon={faSearch} />
                 </InputGroup.Text>
             </InputGroup>
 
-            <div className="filter-group-container designfield">
-                <Form.Group className="filter-group">
+            <div className="events-filter-group-container designfield">
+                <Form.Group className="events-filter-group">
                     <Form.Control className="designfield" as="select" onChange={handleTypeChange}>
                         <option value="">Type of event</option>
                         {eventTypes.map((type, index) => (
@@ -60,7 +60,7 @@ const Search = ({ searchQuery, setSearchQuery, filterOptions, setFilterOptions }
                     </Form.Control>
                 </Form.Group>
 
-                <Form.Group className="filter-group">
+                <Form.Group className="events-filter-group">
                     <Form.Control className="designfield" as="select" onChange={handleLocationChange}>
                         <option value="">All Locations</option>
                         {locations.map((location, index) => (

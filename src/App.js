@@ -17,6 +17,7 @@ import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import Projects from './pages/Projects';
 import Reports from './pages/Reports';
 import Events from './pages/Events';
+import Certi from './pages/Certificates';
 function App() {
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
       <Route path="projects" element={<Projects/>} />
       <Route path="reports" element={<Reports/>} />
       <Route path="events" element={<Events/>} />
+      <Route path="certi" element={<Certi/>} />
       <Route path="*" element={<Err />} />
     </Routes>
     <Footer/>

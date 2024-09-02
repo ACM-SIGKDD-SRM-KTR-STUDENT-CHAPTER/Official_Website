@@ -163,6 +163,15 @@ function NavbarComponent() {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
+                to="/certi"
+                style={{ fontWeight: "bolder" }}
+                onClick={() => handleLinkClick("/certi")}
+                className={activeLink === "/certi" ? "active" : ""}
+              >
+                Certificates
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
                 to="/team"
                 style={{ fontWeight: "bolder" }}
                 onClick={() => handleLinkClick("/team")}
@@ -180,7 +189,7 @@ function NavbarComponent() {
                 FAQs
               </Nav.Link>
             </Nav>
-            <Nav className="ms-auto">
+            <Nav className="ms-auto contactbtn">
               <div className="custom-contact">
                 <Nav.Link onClick={handleShow} style={{ fontWeight: "bold" }}>Contact Us</Nav.Link>
               </div>
@@ -216,12 +225,13 @@ function NavbarComponent() {
                             type="text"
                             placeholder="Full Name"
                             name="Name"
+                            className="custom-form-control"
                           />
                           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
                         <Form.Group as={Col} md="6" controlId="validationCustom02">
                           <Form.Label style={{ fontWeight: "bold" }}>Email</Form.Label>
-                          <Form.Control required type="email" placeholder="Email" name="Email" />
+                          <Form.Control required type="email" placeholder="Email" name="Email" className="custom-form-control"/>
                           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
                       </Row>
@@ -233,6 +243,7 @@ function NavbarComponent() {
                             as="textarea" rows={1}
                             placeholder="Type your subject here..."
                             name="Subject"
+                            className="custom-form-control"
                           />
                           <Form.Control.Feedback type="invalid">
                             Please provide a valid message.
@@ -245,6 +256,7 @@ function NavbarComponent() {
                             as="textarea" rows={4}
                             placeholder="Type your message here..."
                             name="Message"
+                            className="custom-form-control"
                           />
                           <Form.Control.Feedback type="invalid">
                             Please provide a valid message.

@@ -70,7 +70,7 @@
     font-weight: 550;
 }
 
-.search-container {
+.events-search-container {
     margin-bottom: 30px;
 }
 
@@ -129,7 +129,7 @@
     color: white;
 }
 /* components/events/Search.css */
-.search-container {
+.events-search-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,12 +137,12 @@
     margin-bottom: 30px;
 }
 
-.search-input-group {
+.events-search-input-group {
     max-width: 600px;
     width: 100%;
 }
 
-.search-input {
+.events-search-input {
     border-radius: 10px;
     border: 1px solid #ced4da;
     padding-left: 20px;
@@ -153,17 +153,17 @@
     padding: 1rem;
 }
 
-.search-input:focus {
+.events-search-input:focus {
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
 }
 
-.search-input::placeholder {
+.events-search-input::placeholder {
     color: var(--secondary-color);
     opacity: 1;
 }
 
-.search-icon {
+.events-search-icon {
     background-color: var(--secondary-color);
     border: none;
     border-radius: 10px;
@@ -172,11 +172,11 @@
     pointer-events: none;
 }
 
-.search-icon .fa-search {
+.events-search-icon .fa-search {
     font-size: 18px;
 }
 
-.filter-group-container {
+.events-filter-group-container {
     display: flex;
     flex-direction: row; /* Ensure horizontal alignment on desktop */
     flex-wrap: wrap; /* Allow wrapping if needed */
@@ -189,7 +189,7 @@
     font-weight: 550!important;
 }
 
-.filter-group {
+.events-filter-group {
     flex: 1; /* Allow each filter to grow and fill available space */
     min-width: 150px;
     font-weight: 550;
@@ -203,18 +203,18 @@
     border-radius: 10px;
     padding: 0.5rem;
 }
-.filter-group::placeholder {
+.events-filter-group::placeholder {
     color: var(--secondary-color);
     opacity: 1;
 }
 
 @media (max-width: 767px) {
-    .filter-group-container {
+    .events-filter-group-container {
         flex-direction: column; /* Stack vertically on mobile */
         gap: 10px;
     }
 
-    .filter-group {
+    .events-filter-group {
         width: 100%; /* Ensure full width on mobile */
     }
 }
@@ -281,7 +281,7 @@
         margin-top: -10vh;
         margin-bottom: -20vh;
     }
-    .search-container{
+    .events-search-container{
         margin-bottom: -5vh;
         }
 }

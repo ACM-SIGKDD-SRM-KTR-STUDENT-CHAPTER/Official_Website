@@ -1,0 +1,156 @@
+/* Certificates.css */
+
+.search-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-input-group {
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: column; /* Stack input and button vertically on smaller screens */
+}
+
+.search-input {
+    padding: 1rem;
+    font-size: 16px;
+    width: 100%; 
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.search-input::placeholder {
+    color: var(--secondary-color)!important;
+    font-weight: bold;
+
+}
+.search-input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    color: white;
+    font-weight: bold;
+}
+
+.certsearch{
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    border-color: var(--secondary-color);
+    border-width: 2px;
+}
+.certsearch:hover{
+    border-color: var(--secondary-color);
+    background-color: black;
+    font-weight: bold;
+    border-color: var(--secondary-color);
+    border-width: 2px;
+}
+.certsearch:active{
+    border-color: var(--secondary-color)!important;
+    background-color: black!important;
+    font-weight: bold;
+    border-color: var(--secondary-color)!important;
+    border-width: 2px;
+}
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust gap as needed */
+    justify-content: center; /* Center items horizontally */
+}
+
+.results .col {
+    flex: 1 1 100%; /* Full width for each card by default */
+    max-width: 100%; /* Ensure full width */
+}
+
+.certificate-card {
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; /* Center the card */
+    box-shadow: 0 0 10px #57abd7, 0 0 10px #57abd7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #57abd7, 0 0 20px #57abd7;
+}
+
+.certificate-title {
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.certificate-details {
+    line-height: 1.6;
+}
+
+.detail-item {
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+.certifiedbtn{
+    pointer-events: none;
+    color: var(--secondary-color);
+    background-color: black;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .certificate-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+    .certificate-title {
+        font-size: 20px;
+    }
+    .detail-item {
+        font-size: 14px;
+    }
+    .certifiedbtn{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-input {
+        padding: 0.75rem;
+        font-size: 14px;
+    }
+    
+    .search-icon {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+    
+    .certificate-title {
+        font-size: 22px;
+    }
+    
+    .detail-item {
+        font-size: 12px;
+    }
+    
+    .results {
+        gap: 0.5rem; 
+        margin-bottom: -40%;
+    }
+    
+    .results .col {
+        flex: 1 1 100%; /* Full width for each card */
+        max-width: 100%; /* Full width for each card */
+    }
+}

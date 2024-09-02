@@ -127,9 +127,9 @@ function Footer() {
               <div className="copyright text-center">
                 <p style={{ color: "white", fontWeight: "bold", marginRight: isMobile ? "0px" : "170px",marginTop:"-80px" }}>
                   &copy; {isMobile ? "2024" : "2024 Made with ☕ by"}
-                  <NavLink to="#"> SIGKDD Student Chapter SRM KTR </NavLink>
+                  <NavLink to="#"> SRMIST ACM SIGKDD Student Chapter</NavLink>
                 </p>
-                <NavLink to="" className="btn quest-btn">WILDCARD RECRUITMENT [DISABLED]</NavLink>
+                <NavLink to="" className="btn quest-btn">WILDCARD RECRUITMENT</NavLink>
               </div>
             </div>
           </div>
