@@ -12,7 +12,7 @@ function CertificateCard({
     const displayPosition = position || "Participant";
 
     // Generate the certificate URL
-    const certificateUrl = `https://srmsigkdd-cdn.netlify.app/images/${certSlug}/${certificateId}.pdf`;
+    const certificateUrl = `${process.env.REACT_APP_CERTIFICATES_DOWNLOAD_URL}/${certSlug}/${certificateId}.pdf`;
 
     return (
         <Card className="certificate-card position-relative">
