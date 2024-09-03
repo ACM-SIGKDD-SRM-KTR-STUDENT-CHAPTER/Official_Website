@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button, Alert, Row, Col } from "react-bootstrap";
+import { Form, Button, Alert, Row, Col, Spinner } from "react-bootstrap";
 import CertificateCard from "../components/certificates/CertificateCard"; // Adjust the import path if needed
 import "../css/Certificates.css"; // Adjust styles as needed
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +9,7 @@ const Certificates = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [results, setResults] = useState([]);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false); // State to manage loading
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -18,25 +19,27 @@ const Certificates = () => {
       return;
     }
     setError("");
+    setLoading(true); // Start loading
     try {
       const response = await fetch(
-       `${process.env.REACT_APP_CERTIFICATES_URL}/${searchTerm}`
+        `${process.env.REACT_APP_CERTIFICATES_URL}/${searchTerm}`
       );
       if (!response.ok) {
         throw new Error("Certificate not found.");
       }
       const data = await response.json();
-  
+
       // Sort the data by id in descending order
       const sortedData = data.sort((a, b) => b.id - a.id);
-  
+
       setResults(sortedData);
     } catch (error) {
       setError(error.message);
       setResults([]);
+    } finally {
+      setLoading(false); // Stop loading
     }
   };
-  
 
   return (
     <>
@@ -76,6 +79,14 @@ const Certificates = () => {
               </Button>
             </div>
           </Form>
+          {loading && (
+            <div className="text-center loading-container">
+              <Spinner animation="border" role="status">
+                <span className="sr-only">Loading...</span>
+              </Spinner>
+              <p className="loading-text">Searching for certificates...</p>
+            </div>
+          )}
           {error && <Alert variant="danger">{error}</Alert>}
           {results.length > 0 && (
             <div className="results">
@@ -91,6 +102,7 @@ const Certificates = () => {
                       venue={cert.venue}
                       issueDate={cert.issue_date}
                       certificateId={cert.certificate_id}
+                      certSlug={cert.slug}
                       nameOfPerson={cert.name_of_person}
                       registrationNumber={cert.registration_number}
                     />

@@ -1,15 +1,18 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendar, faLocationDot, faIdCard, faUser, faCircleCheck, faStamp, faListOl, faTicket, faStreetView } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faLocationDot, faIdCard, faUser, faCircleCheck, faStamp, faListOl, faTicket, faStreetView, faEye } from "@fortawesome/free-solid-svg-icons";
 import "../../css/Certificates.css"; // Ensure this path is correct
 
 function CertificateCard({
     nameOfEvent, typeOfEvent, position, fromDate, toDate, venue, issueDate,
-    certificateId, nameOfPerson, registrationNumber
+    certificateId, nameOfPerson, registrationNumber,certSlug
 }) {
     // If position is an empty string, set it to "Participation"
     const displayPosition = position || "Participant";
+
+    // Generate the certificate URL
+    const certificateUrl = `https://srmsigkdd-cdn.netlify.app/images/${certSlug}/${certificateId}.pdf`;
 
     return (
         <Card className="certificate-card position-relative">
@@ -55,6 +58,14 @@ function CertificateCard({
                     <button variant="primary" className="btn certsearch certifiedbtn">
                         Certified by SRMIST SIGKDD Student Chapter <FontAwesomeIcon icon={faCircleCheck} className="icon" />
                     </button>
+                    <div>
+                    <Button 
+                        variant="primary" className="btn certsearch viewcertbtn mt-2"
+                        href={certificateUrl}
+                        target="_blank" // Opens the certificate in a new tab
+                    >
+                        View Certificate <FontAwesomeIcon icon={faEye} className="icon" />
+                    </Button></div>
                 </Card.Text>
             </Card.Body>
         </Card>

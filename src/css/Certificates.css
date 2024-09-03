@@ -109,6 +109,10 @@
     color: var(--secondary-color);
     background-color: black;
 }
+.viewcertbtn {
+    font-size: 0.9rem; 
+    padding: 0.6rem 1rem;
+}
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .certificate-card {
@@ -122,6 +126,10 @@
     }
     .certifiedbtn{
         font-size: 0.7rem;
+    }
+    .viewcertbtn {
+        font-size: 0.6rem; /* Smaller font size */
+        padding: 0.6rem 1rem; /* Adjust padding for smaller button */
     }
 }
 
