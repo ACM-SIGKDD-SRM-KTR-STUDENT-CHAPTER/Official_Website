@@ -22,20 +22,7 @@ function CertificateCard({
                     textShadow: "0 0 5px #57abd7, 0 0 40px #57abd7",
                 }} className="certificate-title">{nameOfEvent}</Card.Title>
                 <Card.Text className="certificate-details">
-                    <div className="detail-item">
-                        <FontAwesomeIcon icon={faCalendar} className="icon" />
-                        <strong>Event Dates: </strong>
-                        {`${formatDate(fromDate)}${toDate ? ` to ${formatDate(toDate)}` : ''}`}
-                    </div>
-                    <div className="detail-item">
-                        <FontAwesomeIcon icon={faLocationDot} className="icon" />
-                        <strong>Venue: </strong> {venue}
-                    </div>
-                    <div className="detail-item">
-                        <FontAwesomeIcon icon={faIdCard} className="icon" />
-                        <strong>Certificate ID: </strong> {certificateId}
-                    </div>
-                    <div className="detail-item">
+                <div className="detail-item">
                         <FontAwesomeIcon icon={faUser} className="icon" />
                         <strong>Issued To: </strong> {nameOfPerson}
                     </div>
@@ -54,6 +41,19 @@ function CertificateCard({
                     <div className="detail-item">
                         <FontAwesomeIcon icon={faStreetView} className="icon" />
                         <strong>Position: </strong> {displayPosition}
+                    </div>
+                    <div className="detail-item">
+                        <FontAwesomeIcon icon={faCalendar} className="icon" />
+                        <strong>Event Dates: </strong>
+                        {`${formatDate(fromDate)}${toDate ? ` to ${formatDate(toDate)}` : ''}`}
+                    </div>
+                    <div className="detail-item">
+                        <FontAwesomeIcon icon={faLocationDot} className="icon" />
+                        <strong>Venue: </strong> {venue}
+                    </div>
+                    <div className="detail-item">
+                        <FontAwesomeIcon icon={faIdCard} className="icon" />
+                        <strong>Certificate ID: </strong> {certificateId}
                     </div>
                     <button variant="primary" className="btn certsearch certifiedbtn">
                         Certified by SRMIST SIGKDD Student Chapter <FontAwesomeIcon icon={faCircleCheck} className="icon" />

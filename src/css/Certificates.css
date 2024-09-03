@@ -32,7 +32,7 @@
 .search-input:focus {
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
-    color: white;
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
@@ -49,6 +49,7 @@
     font-weight: bold;
     border-color: var(--secondary-color);
     border-width: 2px;
+    color: var(--secondary-color);
 }
 .certsearch:active{
     border-color: var(--secondary-color)!important;
@@ -56,6 +57,7 @@
     font-weight: bold;
     border-color: var(--secondary-color)!important;
     border-width: 2px;
+    color: var(--secondary-color);
 }
 .results {
     display: flex;
@@ -105,6 +107,7 @@
     margin-right: 5px;
 }
 .certifiedbtn{
+    margin-top: 1vh;
     pointer-events: none;
     color: var(--secondary-color);
     background-color: black;
@@ -129,7 +132,6 @@
     }
     .viewcertbtn {
         font-size: 0.6rem; /* Smaller font size */
-        padding: 0.6rem 1rem; /* Adjust padding for smaller button */
     }
 }
 
