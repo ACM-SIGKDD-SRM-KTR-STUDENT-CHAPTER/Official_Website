@@ -4,7 +4,6 @@ import Carousel from "react-bootstrap/Carousel";
 import { NavLink } from "react-router-dom";
 import CreatorCard from "./CreatorCard";
 import "./Footer.css";
-import Verma from "../../assets/CoreMembers/Aditya.jpg";
 
 function Footer() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -116,7 +115,7 @@ function Footer() {
                   <Carousel className="footer-carousel" fade indicators={false} controls={false} interval={2000}>
                     <Carousel.Item>
                       <CreatorCard
-                        img={Verma}
+                        img="https://srmsigkdd-cdn.netlify.app/images/team_aditya.jpg"
                         title="Aditya Verma"
                         role="Chairperson"
                       />

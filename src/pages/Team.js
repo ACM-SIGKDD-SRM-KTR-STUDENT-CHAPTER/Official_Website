@@ -8,7 +8,6 @@ import TabContent from "../components/team/tabbar/TabContent";
 // eslint-disable-next-line
 import Sample from "../assets/CoreMembers/Sample.png";
 import Sahil from "../assets/CoreMembers/Sahil.jpg";
-import Aditya from "../assets/CoreMembers/Aditya.jpg";
 import Kalpana from "../assets/CoreMembers/kalpana.png";
 import Shanky from "../assets/CoreMembers/Shanky.jpg";
 import Dheeraj from "../assets/CoreMembers/Dheeraj.jpg";
@@ -127,7 +126,7 @@ function Team() {
                     content={
                       <>
                         <ProfileCard
-                          img={Aditya}
+                          img="https://srmsigkdd-cdn.netlify.app/images/team_aditya.jpg"
                           name="Aditya Verma"
                           role="Chairperson"
                           linkedinUrl="https://www.linkedin.com/in/adityave/"
