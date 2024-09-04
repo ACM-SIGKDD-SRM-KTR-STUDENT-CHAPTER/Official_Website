@@ -7,6 +7,7 @@ import GithubReport from "../assets/reports/github-24-1.pdf";
 import GithubEvent from "../assets/Events/gitgithub.png";
 import Webdev from "../assets/Events/htmlcss.jpeg";
 import Orientation from "../assets/Events/or1.jpg";
+import WebdevReport from "../assets/reports/Webdev.pdf";
 function Reports() {
   return (
     <>
@@ -77,7 +78,6 @@ function Reports() {
                           imgSrc="https://srmsigkdd-cdn.netlify.app/images/inauguration.jpg"
                           name="Inauguration"
                           role="30 August 2024"
-                          pdfURL="#"
                         />
                         <RepCard
                           imgSrc="https://srmsigkdd-cdn.netlify.app/images/techtalk.jpg"
@@ -104,7 +104,6 @@ function Reports() {
                           imgSrc={Orientation}
                           name="Orientation [First Batch]"
                           role="28 March 2024"
-                          pdfURL="#"
                         />
                         <RepCard
                           imgSrc={GithubEvent}
@@ -116,7 +115,7 @@ function Reports() {
                           imgSrc={Webdev}
                           name="Web Development Session"
                           role="15 April 2024"
-                          pdfURL="#"
+                          pdfURL={WebdevReport}
                         />
                       </>
                     }
