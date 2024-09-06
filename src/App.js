@@ -18,6 +18,7 @@ import Projects from './pages/Projects';
 import Reports from './pages/Reports';
 import Events from './pages/Events';
 import Certi from './pages/Certificates';
+import Gallery from './pages/Gallery';
 function App() {
   return (
     <>
@@ -36,6 +37,7 @@ function App() {
       <Route path="reports" element={<Reports/>} />
       <Route path="events" element={<Events/>} />
       <Route path="certi" element={<Certi/>} />
+      <Route path="gallery" element={<Gallery/>} />
       <Route path="*" element={<Err />} />
     </Routes>
     <Footer/>

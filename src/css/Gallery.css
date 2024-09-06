@@ -1,0 +1,46 @@
+.landing-section-gallery {
+    padding: 20px 0;
+  }
+  
+  .image-gallery{
+    border-radius: 12px;
+  }
+  .image-card {
+    transition: transform 0.3s ease;
+    background-color: transparent; /* Changed from black to transparent */
+    border-radius: 12px !important;
+    overflow: hidden; /* Ensures no overflow when scaling */
+  }
+  
+  .image-card:hover {
+    transform: scale(1.05);
+    z-index: 1; /* Bring the hovered card to the front */
+  }
+  
+  .img-title{
+    color: #57abd7;
+  }
+  .no-images-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    margin-top: -25px;
+    color: var(#57abd7); 
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(87, 171, 215, 0.1); 
+    border: 2px dashed #57abd7;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+  @media screen and (max-width: 576px) {
+    .landing-section-gallery {
+        padding: 80px 0;
+      }
+    .galtitile{
+        margin-top: 9vh!important;
+    }
+  }

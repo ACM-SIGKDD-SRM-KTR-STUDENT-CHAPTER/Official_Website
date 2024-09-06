@@ -225,12 +225,12 @@
     align-items: center;
     min-height: 200px;
     margin-top: -25px;
-    color: #ff4c4c; /* Red color for emphasis */
+    color: #57abd7; 
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    background-color: rgba(255, 76, 76, 0.1); /* Light red background */
-    border: 2px dashed #ff4c4c; /* Dashed red border */
+    background-color: rgba(87, 171, 215, 0.1); 
+    border: 2px dashed #57abd7; 
     border-radius: 15px;
     padding: 20px;
 }

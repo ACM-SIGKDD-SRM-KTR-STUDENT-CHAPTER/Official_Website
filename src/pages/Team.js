@@ -86,7 +86,7 @@ function Team() {
                     className="nav-link tab-btn active"
                     id="chapterlead-tab"
                     targetID="#chapterlead-tab-pane"
-                    title="Core Team"
+                    title="Chapter Board"
                     selected="false"
                   />
                   <Tab

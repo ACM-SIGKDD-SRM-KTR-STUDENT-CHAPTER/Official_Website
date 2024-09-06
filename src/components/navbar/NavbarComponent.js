@@ -181,6 +181,15 @@ function NavbarComponent() {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
+                to="/gallery"
+                style={{ fontWeight: "bolder" }}
+                onClick={() => handleLinkClick("/gallery")}
+                className={activeLink === "/gallery" ? "active" : ""}
+              >
+                Gallery
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
                 to="/faq"
                 style={{ fontWeight: "bolder" }}
                 onClick={() => handleLinkClick("/faq")}
