@@ -43,7 +43,7 @@ function Domains() {
           <div className="logo" style={{marginBottom:"20px"}}><img src={Corp} className='image corp'/></div> {/* Placeholder for logo */}
           <h3>Corporate</h3>
           <p>
-            Corporate domain deals with business strategies, management, and operations within organizations.
+            Corporate domain deals with business strategies, management, operations, securing and maintaining sponsorships.
           </p>
         </div>
         <div className="domain-card" data-aos="fade-up" data-aos-duration="1000">

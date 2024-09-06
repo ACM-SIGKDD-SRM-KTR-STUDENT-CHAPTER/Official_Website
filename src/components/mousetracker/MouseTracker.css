@@ -1,0 +1,10 @@
+/* src/MouseTracker.css */
+.glow-mouse {
+    width: 30px; /* Adjust the size of the glow */
+    height: 30px; /* Adjust the size of the glow */
+    border-radius: 50%; /* Make it circular */
+    background-color: rgba(87, 171, 215, 0.6); /* White color with transparency */
+    box-shadow: 0 0 20px rgba(87, 171, 215, 0.8); /* Glow effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  

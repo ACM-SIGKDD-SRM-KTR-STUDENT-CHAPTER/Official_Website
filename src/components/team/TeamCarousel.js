@@ -7,11 +7,13 @@ import Gitsession from "../../assets/Events/gitgithub.png"
 import Orientation1 from "../../assets/Events/or1.jpg"
 import Core from "../../assets/Events/core.jpg"
 import HTMLCSS from "../../assets/Events/htmlcss.jpeg"
+import Treasure from "../../assets/Events/treasurehunt.jpg"
+import TechTalk from "../../assets/Events/techtalk.jpg"
 // import YouTube from "react-youtube";
 import "./teamslide.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCss3, faGitSquare, faGithub, faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faHandsHelping, faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
+import { faGem, faHandsHelping, faPeopleGroup, faPersonChalkboard } from "@fortawesome/free-solid-svg-icons";
 import { faPeopleArrows } from "@fortawesome/free-solid-svg-icons/faPeopleArrows";
 
 function TeamCarousel() {
@@ -41,6 +43,18 @@ function TeamCarousel() {
               </h1>
             <Carousel fade slide className="carousel-glow" interval={null}>
             <Carousel.Item>
+                <img src={Treasure} className="d-block w-100 mobile-image" alt="Coming Soon"/>
+                <Carousel.Caption>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faGem} style={{ marginRight: "3px" }} />Treasure Hunt</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={TechTalk} className="d-block w-100 mobile-image" alt="Coming Soon"/>
+                <Carousel.Caption>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faPersonChalkboard} style={{ marginRight: "5px" }} />Tech Talk</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
                 <img src={Outreach} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>
                   <h5 className="eventname"><FontAwesomeIcon icon={faHandsHelping} style={{ marginRight: "3px" }} />Outreach Program</h5>
