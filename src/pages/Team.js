@@ -15,7 +15,6 @@ import Ayush from "../assets/CoreMembers/Ayush.png";
 import Yamika from "../assets/CoreMembers/yamika.jpeg";
 import Medha from "../assets/CoreMembers/medha.jpeg";
 import Vaibhav from "../assets/CoreMembers/vaibhav.jpeg";
-import Krishna from "../assets/CoreMembers/krishna.jpeg";
 import Himanshu from "../assets/CoreMembers/himanshu.jpeg";
 import PCKar from "../assets/CoreMembers/drpckar.jpeg";
 import Vishal from "../assets/Developers/vishal.png";
@@ -263,13 +262,6 @@ function Team() {
                           role="PR Lead"
                           linkedinUrl="https://www.linkedin.com/in/srijita-seth/"
                           instagramUrl="https://www.instagram.com/srijita_seth/"
-                        />
-                         <ProfileCard
-                          img={Krishna}
-                          name="Krishna Mahajan "
-                          role="Corporate Lead"
-                          linkedinUrl="https://www.linkedin.com/in/krishna-mahajan8764?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                          githubUrl="https://github.com/KRISHNA140504"
                         />
                       </>
                     }

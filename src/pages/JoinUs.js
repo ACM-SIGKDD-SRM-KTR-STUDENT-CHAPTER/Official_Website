@@ -1,6 +1,6 @@
 import React from "react";
 import Sample from "../assets/Events/recban.png";
-import "../css/JoinCommunity.css";
+import "../css/JoinUs.css";
 
 function copyLink() {
   var link = window.location.href;
@@ -12,7 +12,7 @@ function shareOnWhatsApp() {
   window.open("https://wa.me/?text=" + link);
 }
 
-function JoinCommunity() {
+function JoinUs() {
   return (
     <>
       <section className="section">
@@ -123,4 +123,4 @@ function JoinCommunity() {
   );
 }
 
-export default JoinCommunity;
+export default JoinUs;
