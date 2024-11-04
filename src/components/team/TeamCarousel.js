@@ -13,7 +13,7 @@ import TechTalk from "../../assets/Events/techtalk.jpg"
 import "./teamslide.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCss3, faGitSquare, faGithub, faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faGem, faHandsHelping, faPeopleGroup, faPersonChalkboard } from "@fortawesome/free-solid-svg-icons";
+import { faGem, faGun, faHandsHelping, faPeopleGroup, faPersonChalkboard } from "@fortawesome/free-solid-svg-icons";
 import { faPeopleArrows } from "@fortawesome/free-solid-svg-icons/faPeopleArrows";
 
 function TeamCarousel() {
@@ -42,6 +42,12 @@ function TeamCarousel() {
                 </span>{" "}
               </h1>
             <Carousel fade slide className="carousel-glow" interval={null}>
+            <Carousel.Item>
+                <img src="https://srmsigkdd-cdn.netlify.app/images/hodback.jpeg" className="d-block w-100 mobile-image" alt="Coming Soon"/>
+                <Carousel.Caption>
+                  <h5 className="eventname"><FontAwesomeIcon icon={faGun} style={{ marginRight: "3px" }} />Hack Of Duty '24</h5>
+                </Carousel.Caption>
+              </Carousel.Item>
             <Carousel.Item>
                 <img src={Treasure} className="d-block w-100 mobile-image" alt="Coming Soon"/>
                 <Carousel.Caption>

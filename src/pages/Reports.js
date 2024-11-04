@@ -75,6 +75,12 @@ function Reports() {
                     content={
                       <>
                       <RepCard
+                          imgSrc="https://srmsigkdd-cdn.netlify.app/images/hodback.jpeg"
+                          name="Hack Of Duty"
+                          role="28-29 October 2024"
+                          pdfURL="#"
+                        />
+                      <RepCard
                           imgSrc="https://srmsigkdd-cdn.netlify.app/images/inauguration.jpg"
                           name="Inauguration"
                           role="30 August 2024"
