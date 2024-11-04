@@ -92,7 +92,7 @@ const LandingSection = (props) => {
               </div>
               <div className="col-3 bttn">
               <NavLink to={props.link} className="join-button btn join-button-container" style={{fontWeight:"bold"}}>
-                  View Projects
+                  View our projects
                 </NavLink>
               </div>
               <div className="col-2 ml-auto">
