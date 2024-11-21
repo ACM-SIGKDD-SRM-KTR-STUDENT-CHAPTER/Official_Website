@@ -14,7 +14,7 @@ function CreatorCard(props) {
         </div>
         <div className="lastup">
           <div className="glowing-circle"></div>
-          <p>Last Updated : 10/11/24 || 03:27pm</p>
+          <p>Last Updated : 21/11/24 || 09:10am</p>
         </div>
       </div>
     </>

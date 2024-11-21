@@ -10,13 +10,36 @@ const Gallery = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
+      const cacheKey = "cachedGallery";
+      const cacheExpiryKey = "galleryCacheExpiry";
+      const cacheExpiryTime = 1000 * 60 * 60 * 24 * 4; // 4 days in milliseconds
+
       try {
+        // Check for cached data
+        const cachedData = localStorage.getItem(cacheKey);
+        const cachedExpiry = localStorage.getItem(cacheExpiryKey);
+        const now = new Date().getTime();
+
+        if (cachedData && cachedExpiry && now < Number(cachedExpiry)) {
+          setImages(JSON.parse(cachedData));
+          setLoading(false);
+          return;
+        }
+
+        // Fetch new data if cache is expired or not present
         const response = await fetch(process.env.REACT_APP_GALLERY_URL);
+        if (!response.ok) {
+          throw new Error("Failed to fetch images");
+        }
         const data = await response.json();
+
+        // Update state and cache
         setImages(data);
-        setLoading(false);
+        localStorage.setItem(cacheKey, JSON.stringify(data));
+        localStorage.setItem(cacheExpiryKey, now + cacheExpiryTime);
       } catch (error) {
         console.error("Error fetching images:", error);
+      } finally {
         setLoading(false);
       }
     };

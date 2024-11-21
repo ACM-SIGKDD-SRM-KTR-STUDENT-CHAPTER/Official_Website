@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import EventCard from "../components/events/EventCard";
 import EventPagination from "../components/events/EventPagination";
-import Search from "../components/events/Search"; // Import the Search component
+import Search from "../components/events/Search";
 import { Alert } from "react-bootstrap";
 import "../css/Events.css";
 
@@ -10,19 +10,39 @@ function Events() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [searchQuery, setSearchQuery] = useState("");
-    const [filterOptions, setFilterOptions] = useState({ type: "", location: "" }); // Removed date
+    const [filterOptions, setFilterOptions] = useState({ type: "", location: "" });
     const [currentPage, setCurrentPage] = useState(1);
     const eventsPerPage = 5;
 
     useEffect(() => {
         const fetchEvents = async () => {
+            const cacheKey = "cachedEvents";
+            const cacheExpiryKey = "eventsCacheExpiry";
+            const cacheExpiryTime = 1000 * 60 * 60; // 1 hour in milliseconds
+
             try {
+                // Check for cached data
+                const cachedData = localStorage.getItem(cacheKey);
+                const cachedExpiry = localStorage.getItem(cacheExpiryKey);
+                const now = new Date().getTime();
+
+                if (cachedData && cachedExpiry && now < Number(cachedExpiry)) {
+                    setEvents(JSON.parse(cachedData));
+                    setLoading(false);
+                    return;
+                }
+
+                // Fetch new data
                 const response = await fetch(process.env.REACT_APP_EVENTS_URL);
                 if (!response.ok) {
                     throw new Error("Failed to fetch events");
                 }
                 const data = await response.json();
+
+                // Update state and cache
                 setEvents(data);
+                localStorage.setItem(cacheKey, JSON.stringify(data));
+                localStorage.setItem(cacheExpiryKey, now + cacheExpiryTime);
             } catch (error) {
                 setError(error.message);
             } finally {
@@ -73,9 +93,7 @@ function Events() {
                                 <p className="loading-text">Loading events...</p>
                             </div>
                         ) : error ? (
-                            <Alert variant="danger">
-                                {error}
-                            </Alert>
+                            <Alert variant="danger">{error}</Alert>
                         ) : displayedEvents.length > 0 ? (
                             displayedEvents.map(event => (
                                 <EventCard

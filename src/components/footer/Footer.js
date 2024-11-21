@@ -73,8 +73,8 @@ function Footer() {
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="https://www.kdd.org/" target="_blank" rel="noreferrer">
-                        <i className="bi bi-book"></i>
+                      <a href="https://srmsigkddlinktree.vercel.app/" target="_blank" rel="noreferrer">
+                        <i className="bi bi-tree-fill"></i>
                       </a>
                     </li>
                   </ul>

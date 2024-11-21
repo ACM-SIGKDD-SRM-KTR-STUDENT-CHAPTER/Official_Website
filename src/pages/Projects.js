@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "../components/projects/ProjectCard";
-import {  Alert } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 import "../css/Projects.css";
 
 function Projects() {
@@ -10,17 +10,37 @@ function Projects() {
 
     useEffect(() => {
         const fetchProjects = async () => {
+            const cacheKey = "cachedProjects";
+            const cacheExpiryKey = "projectsCacheExpiry";
+            const cacheExpiryTime = 1000 * 60 * 60; // 1 hour in milliseconds
+
             try {
+                // Check for cached data
+                const cachedData = localStorage.getItem(cacheKey);
+                const cachedExpiry = localStorage.getItem(cacheExpiryKey);
+                const now = new Date().getTime();
+
+                if (cachedData && cachedExpiry && now < Number(cachedExpiry)) {
+                    setProjects(JSON.parse(cachedData));
+                    setLoading(false);
+                    return;
+                }
+
+                // Fetch new data
                 const response = await fetch(process.env.REACT_APP_PROJECTS_URL);
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error("Network response was not ok");
                 }
                 const data = await response.json();
                 data.sort((a, b) => b.id - a.id);
+
+                // Update state and cache
                 setProjects(data);
+                localStorage.setItem(cacheKey, JSON.stringify(data));
+                localStorage.setItem(cacheExpiryKey, now + cacheExpiryTime);
             } catch (error) {
-                setError('Error fetching project data. Please try again later.');
-                console.error('Error fetching project data:', error);
+                setError("Error fetching project data. Please try again later.");
+                console.error("Error fetching project data:", error);
             } finally {
                 setLoading(false);
             }
@@ -31,8 +51,8 @@ function Projects() {
 
     const formatDate = (dateString) => {
         const date = new Date(dateString);
-        const options = { day: '2-digit', month: 'long', year: 'numeric' };
-        return date.toLocaleDateString('en-GB', options);
+        const options = { day: "2-digit", month: "long", year: "numeric" };
+        return date.toLocaleDateString("en-GB", options);
     };
 
     return (
@@ -44,7 +64,12 @@ function Projects() {
                         <div className="col-lg-10 text-center mobtitle">
                             <h1 className="title mobprojtitle" style={{ marginBottom: "40px" }}>
                                 Our{" "}
-                                <span style={{ color: "var(--secondary-color)", textShadow: "0 0 10px #57abd7, 0 0 20px #57abd7" }}>
+                                <span
+                                    style={{
+                                        color: "var(--secondary-color)",
+                                        textShadow: "0 0 10px #57abd7, 0 0 20px #57abd7",
+                                    }}
+                                >
                                     Projects
                                 </span>{" "}
                             </h1>
@@ -53,15 +78,13 @@ function Projects() {
                     <div className="proj-card-container">
                         {loading ? (
                             <div className="text-center loading-container">
-                            <div className="loader"></div> {/* Custom spinner */}
-                            <p className="loading-text">Loading projects...</p>
-                        </div>
+                                <div className="loader"></div> {/* Custom spinner */}
+                                <p className="loading-text">Loading projects...</p>
+                            </div>
                         ) : error ? (
-                            <Alert variant="danger">
-                                {error}
-                            </Alert>
+                            <Alert variant="danger">{error}</Alert>
                         ) : (
-                            projects.map(project => (
+                            projects.map((project) => (
                                 <ProjectCard
                                     key={project.id}
                                     imgSrc={project.proj_image}
