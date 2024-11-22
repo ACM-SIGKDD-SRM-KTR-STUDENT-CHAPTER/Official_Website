@@ -64,7 +64,7 @@ const Certificates = () => {
             <div className="search-input-group">
               <Form.Control
                 type="text"
-                placeholder="Enter your registration number"
+                placeholder="Enter your registration number. example RA2211027010019"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="search-input"
