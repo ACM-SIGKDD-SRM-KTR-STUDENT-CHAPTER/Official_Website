@@ -13,7 +13,7 @@
 
 </p>
 <h1 align="center" >SIGKDD Student Chapter SRM KTR </h1>
-
+<h2><b> Winner of ACM INDIA OUTSTANDING WEBSITE AWARD 2024-25 </b></h2>
   
 </p>
 
